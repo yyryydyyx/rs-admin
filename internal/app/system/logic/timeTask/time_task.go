@@ -10,8 +10,8 @@ package timeTask
 import (
 	"sync"
 
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/model"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/service"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/model"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/service"
 )
 
 func init() {

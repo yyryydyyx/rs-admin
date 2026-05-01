@@ -8,7 +8,7 @@
 package boot
 
 import (
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/logic"
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/logic"
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/logic"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/system/logic"
 )

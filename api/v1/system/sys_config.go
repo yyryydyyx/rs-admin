@@ -9,8 +9,8 @@ package system
 
 import (
 	"github.com/gogf/gf/v2/frame/g"
-	commonApi "github.com/yyryydyyx/yyr-admin/v3/api/v1/common"
-	commonEntity "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/model/entity"
+	commonApi "github.com/yyryydyyx/rs-admin/v3/api/v1/common"
+	commonEntity "github.com/yyryydyyx/rs-admin/v3/internal/app/common/model/entity"
 )
 
 type ConfigSearchReq struct {

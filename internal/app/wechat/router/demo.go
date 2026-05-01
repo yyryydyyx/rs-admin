@@ -11,7 +11,7 @@ import (
 	"context"
 
 	"github.com/gogf/gf/v2/net/ghttp"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/wechat/controller"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/wechat/controller"
 )
 
 func (router *Router) BindDemoController(ctx context.Context, group *ghttp.RouterGroup) {

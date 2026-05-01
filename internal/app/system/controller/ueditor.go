@@ -16,13 +16,13 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/net/ghttp"
 	"github.com/gogf/gf/v2/util/gconv"
-	"github.com/yyryydyyx/yyr-admin/v3/api/v1/system"
-	commonConsts "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/consts"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/model"
-	commonService "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/service"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/consts"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/service"
-	"github.com/yyryydyyx/yyr-admin/v3/library/libUtils"
+	"github.com/yyryydyyx/rs-admin/v3/api/v1/system"
+	commonConsts "github.com/yyryydyyx/rs-admin/v3/internal/app/common/consts"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/model"
+	commonService "github.com/yyryydyyx/rs-admin/v3/internal/app/common/service"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/consts"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/service"
+	"github.com/yyryydyyx/rs-admin/v3/library/libUtils"
 )
 
 var UEditor = new(uEditorController)

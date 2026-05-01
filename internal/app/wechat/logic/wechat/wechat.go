@@ -19,7 +19,7 @@ import (
 	"github.com/gogf/gf/v2/errors/gerror"
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/os/gctx"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/wechat/service"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/wechat/service"
 )
 
 func init() {

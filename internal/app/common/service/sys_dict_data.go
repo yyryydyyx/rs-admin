@@ -8,7 +8,7 @@ package service
 import (
 	"context"
 
-	"github.com/yyryydyyx/yyr-admin/v3/api/v1/system"
+	"github.com/yyryydyyx/rs-admin/v3/api/v1/system"
 )
 
 type ISysDictData interface {

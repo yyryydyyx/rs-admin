@@ -9,8 +9,8 @@ import (
 	"github.com/casbin/casbin/v2/persist"
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/os/gctx"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/dao"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/model/entity"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/dao"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/model/entity"
 )
 
 // 1. 结构体定义清理：不需要在 Adapter 里存 Enforcer 指针了

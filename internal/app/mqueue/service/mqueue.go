@@ -8,8 +8,8 @@
 package service
 
 import (
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/consts"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/model"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/consts"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/model"
 )
 
 type IConsumer interface {

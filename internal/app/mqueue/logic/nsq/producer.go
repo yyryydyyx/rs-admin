@@ -15,8 +15,8 @@ import (
 
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/nsqio/go-nsq"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/consts"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/service"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/consts"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/service"
 )
 
 type nsqProducer struct {

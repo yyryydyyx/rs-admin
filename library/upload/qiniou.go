@@ -10,7 +10,7 @@ import (
 	"github.com/gogf/gf/v2/util/guid"
 	"github.com/qiniu/go-sdk/v7/auth/qbox"
 	"github.com/qiniu/go-sdk/v7/storage"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/model"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/model"
 )
 
 type Qiniou struct{}

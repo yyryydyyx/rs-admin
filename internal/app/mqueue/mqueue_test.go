@@ -14,11 +14,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/consts"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/logic/diskqueue"
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/logic/mqueue"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/model"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/service"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/consts"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/logic/diskqueue"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/logic/mqueue"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/model"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/service"
 )
 
 var mBody = []byte("gfast-mqueue 测试消息队列内容")

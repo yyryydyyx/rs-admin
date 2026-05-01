@@ -1,4 +1,4 @@
-module github.com/yyryydyyx/yyr-admin/v3
+module github.com/yyryydyyx/rs-admin/v3
 
 go 1.23.0
 

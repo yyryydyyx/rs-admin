@@ -10,7 +10,7 @@ package controller
 import (
 	"context"
 
-	"github.com/yyryydyyx/yyr-admin/v3/api/v1/wechat"
+	"github.com/yyryydyyx/rs-admin/v3/api/v1/wechat"
 )
 
 var Demo = new(demoController)

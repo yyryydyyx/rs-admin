@@ -10,7 +10,7 @@ import (
 	"github.com/gogf/gf/v2/os/gctx"
 	"github.com/gogf/gf/v2/os/gtime"
 	"github.com/gorilla/websocket"
-	systemModel "github.com/yyryydyyx/yyr-admin/v3/internal/app/system/model"
+	systemModel "github.com/yyryydyyx/rs-admin/v3/internal/app/system/model"
 )
 
 const (

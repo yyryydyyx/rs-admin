@@ -9,8 +9,8 @@ package system
 
 import (
 	"github.com/gogf/gf/v2/frame/g"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/model"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/model/entity"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/model"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/model/entity"
 )
 
 type DeptSearchReq struct {

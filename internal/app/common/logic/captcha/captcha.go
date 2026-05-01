@@ -18,7 +18,7 @@ import (
 	"github.com/gogf/gf/v2/util/gconv"
 	"github.com/mojocn/base64Captcha"
 	captchaV2 "github.com/wenlng/go-captcha/captcha"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/service"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/service"
 )
 
 func init() {

@@ -10,7 +10,7 @@ package snowIDGen
 import (
 	"github.com/gogf/gf/v2/os/gtime"
 	"github.com/sony/sonyflake"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/service"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/service"
 )
 
 var machineID uint16 = 1

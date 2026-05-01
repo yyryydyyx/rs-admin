@@ -9,7 +9,7 @@ package eventBus
 
 import (
 	"github.com/asaskevich/EventBus"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/service"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/service"
 )
 
 func init() {

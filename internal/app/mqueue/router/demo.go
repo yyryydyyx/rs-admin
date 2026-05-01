@@ -12,7 +12,7 @@ import (
 
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/net/ghttp"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/controller"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/controller"
 )
 
 var R = new(Router)

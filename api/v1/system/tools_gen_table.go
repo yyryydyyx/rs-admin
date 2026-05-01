@@ -9,9 +9,9 @@ package system
 
 import (
 	"github.com/gogf/gf/v2/frame/g"
-	commonApi "github.com/yyryydyyx/yyr-admin/v3/api/v1/common"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/model"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/model/entity"
+	commonApi "github.com/yyryydyyx/rs-admin/v3/api/v1/common"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/model"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/model/entity"
 )
 
 // ToolsGenDBReq 获取数据库列表请求参数

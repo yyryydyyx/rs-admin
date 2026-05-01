@@ -16,10 +16,10 @@ import (
 	"github.com/gogf/gf/v2/text/gstr"
 	"github.com/gogf/gf/v2/util/gconv"
 	"github.com/gogf/gf/v2/util/grand"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/consts"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/model"
-	"github.com/yyryydyyx/yyr-admin/v3/library/libUtils"
-	"github.com/yyryydyyx/yyr-admin/v3/library/liberr"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/consts"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/model"
+	"github.com/yyryydyyx/rs-admin/v3/library/libUtils"
+	"github.com/yyryydyyx/rs-admin/v3/library/liberr"
 )
 
 type Local struct {

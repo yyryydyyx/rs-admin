@@ -12,7 +12,7 @@ package model
 import (
 	"github.com/gogf/gf/v2/os/gtime"
 	"github.com/gogf/gf/v2/util/gmeta"
-	comModel "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/model"
+	comModel "github.com/yyryydyyx/rs-admin/v3/internal/app/common/model"
 )
 
 // SysNoticeReadInfoRes is the golang structure for table sys_notice_read.

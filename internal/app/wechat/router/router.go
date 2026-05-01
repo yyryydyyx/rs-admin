@@ -11,9 +11,9 @@ import (
 	"context"
 
 	"github.com/gogf/gf/v2/net/ghttp"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/wechat/controller"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/wechat/service"
-	"github.com/yyryydyyx/yyr-admin/v3/library/libRouter"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/wechat/controller"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/wechat/service"
+	"github.com/yyryydyyx/rs-admin/v3/library/libRouter"
 )
 
 var R = new(Router)

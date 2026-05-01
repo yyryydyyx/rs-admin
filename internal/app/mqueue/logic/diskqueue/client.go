@@ -21,9 +21,9 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/os/gctx"
 	"github.com/gogf/gf/v2/util/grand"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/consts"
-	disk "github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/driver"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/model"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/consts"
+	disk "github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/driver"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/model"
 )
 
 func logger(ctx context.Context) disk.AppLogFunc {

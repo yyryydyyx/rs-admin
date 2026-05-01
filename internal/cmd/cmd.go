@@ -11,9 +11,9 @@ import (
 	"github.com/gogf/gf/v2/os/gcmd"
 	"github.com/gogf/gf/v2/os/glog"
 	"github.com/gogf/gf/v2/text/gstr"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/consts"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/mounter"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/router"
+	"github.com/yyryydyyx/rs-admin/v3/internal/consts"
+	"github.com/yyryydyyx/rs-admin/v3/internal/mounter"
+	"github.com/yyryydyyx/rs-admin/v3/internal/router"
 )
 
 var (

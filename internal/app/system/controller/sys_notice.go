@@ -13,8 +13,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/yyryydyyx/yyr-admin/v3/api/v1/system"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/service"
+	"github.com/yyryydyyx/rs-admin/v3/api/v1/system"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/service"
 )
 
 type sysNoticeController struct {

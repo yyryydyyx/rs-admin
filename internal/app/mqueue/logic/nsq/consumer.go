@@ -14,8 +14,8 @@ import (
 
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/nsqio/go-nsq"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/model"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/service"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/model"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/service"
 )
 
 type nsqConsumer struct {

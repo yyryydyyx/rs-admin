@@ -7,4 +7,4 @@
 
 package boot
 
-import _ "github.com/yyryydyyx/yyr-admin/v3/internal/app/wechat/logic"
+import _ "github.com/yyryydyyx/rs-admin/v3/internal/app/wechat/logic"

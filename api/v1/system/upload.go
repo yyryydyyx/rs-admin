@@ -3,8 +3,8 @@ package system
 import (
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/net/ghttp"
-	"github.com/yyryydyyx/yyr-admin/v3/api/v1/common"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/model"
+	"github.com/yyryydyyx/rs-admin/v3/api/v1/common"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/model"
 )
 
 // 单图上传

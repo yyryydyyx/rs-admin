@@ -1,18 +1,18 @@
-2026-04-26T21:19:55.070+08:00 [INFO] {8be963edb5eaa918f1f5ec106b824452} /home/yyr/go/src/yyr-admin/internal/cmd/cmd.go:26: 
+2026-04-26T21:19:55.070+08:00 [INFO] {8be963edb5eaa918f1f5ec106b824452} /home/yyr/go/src/rs-admin/internal/cmd/cmd.go:26: 
    ____________           __ 
   / ____/ ____/___ ______/ /_
  / / __/ /_  / __ `/ ___/ __/
 / /_/ / __/ / /_/ (__  ) /_  
 \____/_/    \__,_/____/\__/   Version: 3.3.11
-2026-04-26T21:19:55.105+08:00 [DEBU] /home/yyr/go/src/yyr-admin/library/libWebsocket/init.go:20: start websocket..
-2026-04-26T21:26:17.405+08:00 [INFO] /home/yyr/go/src/yyr-admin/library/libWebsocket/client.go:83: websocket client quit, user:&{LoginUserRes:0xc00175c100}
-2026-04-26T21:26:39.127+08:00 [INFO] /home/yyr/go/src/yyr-admin/library/libWebsocket/client.go:83: websocket client quit, user:&{LoginUserRes:0xc0017d2000}
-2026-04-26T21:26:52.171+08:00 [INFO] /home/yyr/go/src/yyr-admin/library/libWebsocket/client.go:83: websocket client quit, user:&{LoginUserRes:0xc00175c280}
-2026-04-26T21:52:37.734+08:00 [INFO] {a50875e57eeca91862ab0504e6e9ce4a} /home/yyr/go/src/yyr-admin/internal/cmd/cmd.go:26: 
+2026-04-26T21:19:55.105+08:00 [DEBU] /home/yyr/go/src/rs-admin/library/libWebsocket/init.go:20: start websocket..
+2026-04-26T21:26:17.405+08:00 [INFO] /home/yyr/go/src/rs-admin/library/libWebsocket/client.go:83: websocket client quit, user:&{LoginUserRes:0xc00175c100}
+2026-04-26T21:26:39.127+08:00 [INFO] /home/yyr/go/src/rs-admin/library/libWebsocket/client.go:83: websocket client quit, user:&{LoginUserRes:0xc0017d2000}
+2026-04-26T21:26:52.171+08:00 [INFO] /home/yyr/go/src/rs-admin/library/libWebsocket/client.go:83: websocket client quit, user:&{LoginUserRes:0xc00175c280}
+2026-04-26T21:52:37.734+08:00 [INFO] {a50875e57eeca91862ab0504e6e9ce4a} /home/yyr/go/src/rs-admin/internal/cmd/cmd.go:26: 
    ____________           __ 
   / ____/ ____/___ ______/ /_
  / / __/ /_  / __ `/ ___/ __/
 / /_/ / __/ / /_/ (__  ) /_  
 \____/_/    \__,_/____/\__/   Version: 3.3.11
-2026-04-26T21:52:37.749+08:00 [DEBU] /home/yyr/go/src/yyr-admin/library/libWebsocket/init.go:20: start websocket..
-2026-04-26T21:53:04.250+08:00 [INFO] /home/yyr/go/src/yyr-admin/library/libWebsocket/client.go:83: websocket client quit, user:&{LoginUserRes:0xc000b6e580}
+2026-04-26T21:52:37.749+08:00 [DEBU] /home/yyr/go/src/rs-admin/library/libWebsocket/init.go:20: start websocket..
+2026-04-26T21:53:04.250+08:00 [INFO] /home/yyr/go/src/rs-admin/library/libWebsocket/client.go:83: websocket client quit, user:&{LoginUserRes:0xc000b6e580}

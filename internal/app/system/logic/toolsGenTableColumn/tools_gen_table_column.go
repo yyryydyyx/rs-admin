@@ -17,11 +17,11 @@ import (
 	"github.com/gogf/gf/v2/text/gregex"
 	"github.com/gogf/gf/v2/text/gstr"
 	"github.com/gogf/gf/v2/util/gconv"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/dao"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/model"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/model/entity"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/service"
-	"github.com/yyryydyyx/yyr-admin/v3/library/liberr"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/dao"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/model"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/model/entity"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/service"
+	"github.com/yyryydyyx/rs-admin/v3/library/liberr"
 )
 
 func init() {

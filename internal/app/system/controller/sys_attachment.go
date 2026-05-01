@@ -13,9 +13,9 @@ import (
 	"context"
 	"errors"
 
-	"github.com/yyryydyyx/yyr-admin/v3/api/v1/system"
-	commonService "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/service"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/service"
+	"github.com/yyryydyyx/rs-admin/v3/api/v1/system"
+	commonService "github.com/yyryydyyx/rs-admin/v3/internal/app/common/service"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/service"
 )
 
 type sysAttachmentController struct {

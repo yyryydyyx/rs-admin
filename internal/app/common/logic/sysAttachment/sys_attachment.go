@@ -17,12 +17,12 @@ import (
 	"github.com/gogf/gf/v2/os/gtime"
 	"github.com/gogf/gf/v2/text/gstr"
 	"github.com/gogf/gf/v2/util/gconv"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/dao"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/model"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/model/do"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/service"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/consts"
-	"github.com/yyryydyyx/yyr-admin/v3/library/liberr"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/dao"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/model"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/model/do"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/service"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/consts"
+	"github.com/yyryydyyx/rs-admin/v3/library/liberr"
 )
 
 var fileKind = map[string]*gset.StrSet{

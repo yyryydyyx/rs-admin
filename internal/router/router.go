@@ -11,11 +11,11 @@ import (
 	"context"
 
 	"github.com/gogf/gf/v2/net/ghttp"
-	commonRouter "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/router"
-	commonService "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/service"
-	mqueueRouter "github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/router"
-	systemRouter "github.com/yyryydyyx/yyr-admin/v3/internal/app/system/router"
-	"github.com/yyryydyyx/yyr-admin/v3/library/libRouter"
+	commonRouter "github.com/yyryydyyx/rs-admin/v3/internal/app/common/router"
+	commonService "github.com/yyryydyyx/rs-admin/v3/internal/app/common/service"
+	mqueueRouter "github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/router"
+	systemRouter "github.com/yyryydyyx/rs-admin/v3/internal/app/system/router"
+	"github.com/yyryydyyx/rs-admin/v3/library/libRouter"
 )
 
 var R = new(Router)

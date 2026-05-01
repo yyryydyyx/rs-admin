@@ -5,7 +5,7 @@
 package dao
 
 import (
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/dao/internal"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/dao/internal"
 )
 
 // casbinRuleDao is the data access object for table casbin_rule.

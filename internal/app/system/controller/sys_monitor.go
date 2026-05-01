@@ -16,8 +16,8 @@ import (
 	"github.com/shirou/gopsutil/v3/load"
 	"github.com/shirou/gopsutil/v3/mem"
 	"github.com/shirou/gopsutil/v3/process"
-	"github.com/yyryydyyx/yyr-admin/v3/api/v1/system"
-	"github.com/yyryydyyx/yyr-admin/v3/library/libUtils"
+	"github.com/yyryydyyx/rs-admin/v3/api/v1/system"
+	"github.com/yyryydyyx/rs-admin/v3/library/libUtils"
 )
 
 var Monitor = sysMonitorController{

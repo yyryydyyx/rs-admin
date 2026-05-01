@@ -10,7 +10,7 @@
 package dao
 
 import (
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/dao/internal"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/dao/internal"
 )
 
 // sysAttachmentDao is the manager for logic model data accessing and custom defined data operations functions management.

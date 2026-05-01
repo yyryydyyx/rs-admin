@@ -8,10 +8,10 @@
 package logic
 
 import (
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/wechat/logic/context"
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/wechat/logic/token"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/wechat/logic/context"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/wechat/logic/token"
 
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/wechat/logic/middleware"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/wechat/logic/middleware"
 
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/wechat/logic/wechat"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/wechat/logic/wechat"
 )

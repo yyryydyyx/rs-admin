@@ -16,8 +16,8 @@ import (
 	"github.com/apache/rocketmq-client-go/v2/primitive"
 	"github.com/apache/rocketmq-client-go/v2/rlog"
 	"github.com/gogf/gf/v2/frame/g"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/model"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/service"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/model"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/service"
 )
 
 type rocketmqConsumer struct {

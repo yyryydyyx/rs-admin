@@ -20,8 +20,8 @@ import (
 	"github.com/gogf/gf/v2/os/gfile"
 	"github.com/gogf/gf/v2/os/gtime"
 	"github.com/gogf/gf/v2/util/grand"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/model"
-	"github.com/yyryydyyx/yyr-admin/v3/library/liberr"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/model"
+	"github.com/yyryydyyx/rs-admin/v3/library/liberr"
 )
 
 type OSS struct {

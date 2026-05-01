@@ -12,11 +12,11 @@ import (
 
 	"github.com/gogf/gf/v2/errors/gerror"
 	"github.com/gogf/gf/v2/os/gctx"
-	"github.com/yyryydyyx/yyr-admin/v3/api/v1/common"
-	"github.com/yyryydyyx/yyr-admin/v3/api/v1/system"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/model"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/model/entity"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/service"
+	"github.com/yyryydyyx/rs-admin/v3/api/v1/common"
+	"github.com/yyryydyyx/rs-admin/v3/api/v1/system"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/model"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/model/entity"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/service"
 )
 
 var ToolsGenTable = new(toolsGenTableController)

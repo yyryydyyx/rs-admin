@@ -5,7 +5,7 @@
 package dao
 
 import (
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/dao/internal"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/dao/internal"
 )
 
 // sysAuthRuleDao is the data access object for table sys_auth_rule.

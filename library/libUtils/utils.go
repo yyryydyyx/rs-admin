@@ -24,7 +24,7 @@ import (
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/net/ghttp"
 	"github.com/gogf/gf/v2/text/gstr"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/consts"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/consts"
 )
 
 // EncryptPassword 密码加密

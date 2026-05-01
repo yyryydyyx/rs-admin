@@ -9,7 +9,7 @@ package middleware
 
 import (
 	"github.com/gogf/gf/v2/net/ghttp"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/service"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/service"
 )
 
 func init() {

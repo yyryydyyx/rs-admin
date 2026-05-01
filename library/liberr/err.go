@@ -13,7 +13,7 @@ import (
 	"github.com/gogf/gf/v2/errors/gcode"
 	"github.com/gogf/gf/v2/errors/gerror"
 	"github.com/gogf/gf/v2/frame/g"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/consts"
+	"github.com/yyryydyyx/rs-admin/v3/internal/consts"
 )
 
 func ErrIsNil(ctx context.Context, err error, msg ...string) {

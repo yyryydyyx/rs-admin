@@ -11,7 +11,7 @@ import (
 	"github.com/gogf/gf/v2/text/gregex"
 	"github.com/gogf/gf/v2/util/gconv"
 	"github.com/gogf/gf/v2/util/gvalid"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/mounter"
+	"github.com/yyryydyyx/rs-admin/v3/internal/mounter"
 )
 
 func init() {

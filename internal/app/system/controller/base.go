@@ -9,7 +9,7 @@ package controller
 
 import (
 	"github.com/gogf/gf/v2/net/ghttp"
-	commonController "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/controller"
+	commonController "github.com/yyryydyyx/rs-admin/v3/internal/app/common/controller"
 )
 
 type BaseController struct {

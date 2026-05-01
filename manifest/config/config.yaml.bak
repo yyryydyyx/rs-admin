@@ -119,7 +119,7 @@ gen:
   moduleName: "system"
   apiName: "api/v1"
   packageName: "internal/app/system"
-  goModName: "github.com/yyryydyyx/yyr-admin/v3"
+  goModName: "github.com/yyryydyyx/rs-admin/v3"
   autoRemovePre: true   #是否自动删除表前缀
   tablePrefix: "table_,qxkj_"   #表前缀
   templatePath: "./resource/template/vm"  #代码生成模板路径

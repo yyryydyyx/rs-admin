@@ -8,8 +8,8 @@ package service
 import (
 	"context"
 
-	"github.com/yyryydyyx/yyr-admin/v3/api/v1/system"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/model"
+	"github.com/yyryydyyx/rs-admin/v3/api/v1/system"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/model"
 )
 
 type (

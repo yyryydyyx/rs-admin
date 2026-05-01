@@ -8,4 +8,4 @@
 package logic
 
 // 启动消息队列服务
-import _ "github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/logic/mqueue"
+import _ "github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/logic/mqueue"

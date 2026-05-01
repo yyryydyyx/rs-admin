@@ -16,7 +16,7 @@ import (
 	"github.com/gogf/gf/v2/util/grand"
 	"github.com/tencentyun/cos-go-sdk-v5"
 	"github.com/tencentyun/cos-go-sdk-v5/debug"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/model"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/model"
 )
 
 type Tencent struct {

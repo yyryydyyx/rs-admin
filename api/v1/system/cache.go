@@ -9,7 +9,7 @@ package system
 
 import (
 	"github.com/gogf/gf/v2/frame/g"
-	commonApi "github.com/yyryydyyx/yyr-admin/v3/api/v1/common"
+	commonApi "github.com/yyryydyyx/rs-admin/v3/api/v1/common"
 )
 
 type CacheRemoveReq struct {

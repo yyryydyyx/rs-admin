@@ -20,12 +20,12 @@ import (
 	"github.com/gogf/gf/v2/container/gpool"
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/os/glog"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/consts"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/logic/diskqueue"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/logic/nsq"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/logic/rocketmq"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/model"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/mqueue/service"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/consts"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/logic/diskqueue"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/logic/nsq"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/logic/rocketmq"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/model"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/mqueue/service"
 )
 
 var ctx = context.TODO()

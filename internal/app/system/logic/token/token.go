@@ -10,12 +10,12 @@ package token
 import (
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/os/gctx"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/consts"
+	commonModel "github.com/yyryydyyx/rs-admin/v3/internal/app/common/model"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/service"
+	"github.com/yyryydyyx/rs-admin/v3/library/liberr"
 	"github.com/yyryydyyx/rs-token/adapter"
 	"github.com/yyryydyyx/rs-token/gftoken"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/consts"
-	commonModel "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/model"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/service"
-	"github.com/yyryydyyx/yyr-admin/v3/library/liberr"
 )
 
 type sToken struct {

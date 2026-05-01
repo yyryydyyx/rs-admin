@@ -11,9 +11,9 @@ import (
 	"context"
 
 	"github.com/gogf/gf/v2/net/ghttp"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/model"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/wechat/consts"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/wechat/service"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/model"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/wechat/consts"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/wechat/service"
 )
 
 func init() {

@@ -5,14 +5,14 @@
 package logic
 
 import (
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/logic/cache"
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/logic/captcha"
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/logic/eventBus"
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/logic/middleware"
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/logic/snowIDGen"
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/logic/sysAttachment"
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/logic/sysConfig"
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/logic/sysDictData"
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/logic/sysDictType"
-	_ "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/logic/upload"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/cache"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/captcha"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/eventBus"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/middleware"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/snowIDGen"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/sysAttachment"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/sysConfig"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/sysDictData"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/sysDictType"
+	_ "github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/upload"
 )

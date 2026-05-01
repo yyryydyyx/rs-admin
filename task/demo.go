@@ -12,8 +12,8 @@ import (
 	"fmt"
 
 	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/model/do"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/service"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/model/do"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/service"
 )
 
 func Test1(ctx context.Context) {

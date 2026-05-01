@@ -1,8 +1,8 @@
 2026-04-26T21:23:51.137+08:00 {ef9f39e4eceaa918f7f5ec1090b19152} 200 "POST http 20.0.0.11:8808 /api/v1/system/login HTTP/1.1" 826.652, 20.0.0.1, "http://localhost/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36", -1, "", ""
 Stack:
 1. 验证码输入错误
-   1).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/controller.(*loginController).Login
-        /home/yyr/go/src/yyr-admin/internal/app/system/controller/sys_login.go:50
-   2).  github.com/yyryydyyx/yyr-admin/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
-        /home/yyr/go/src/yyr-admin/internal/app/common/logic/middleware/middleware.go:30
+   1).  github.com/yyryydyyx/rs-admin/v3/internal/app/system/controller.(*loginController).Login
+        /home/yyr/go/src/rs-admin/internal/app/system/controller/sys_login.go:50
+   2).  github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        /home/yyr/go/src/rs-admin/internal/app/common/logic/middleware/middleware.go:30
 

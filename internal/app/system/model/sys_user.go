@@ -9,7 +9,7 @@ package model
 
 import (
 	"github.com/gogf/gf/v2/util/gmeta"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/model/entity"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/model/entity"
 )
 
 // LoginUserRes 登录返回

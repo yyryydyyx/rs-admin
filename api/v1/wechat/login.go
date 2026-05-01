@@ -9,8 +9,8 @@ package wechat
 
 import (
 	"github.com/gogf/gf/v2/frame/g"
-	commonApi "github.com/yyryydyyx/yyr-admin/v3/api/v1/common"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/model"
+	commonApi "github.com/yyryydyyx/rs-admin/v3/api/v1/common"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/model"
 )
 
 type WxUrlReq struct {

@@ -10,10 +10,10 @@ package cache
 import (
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/os/gctx"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/consts"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/common/service"
 	"github.com/yyryydyyx/rs-cache/adapter"
 	"github.com/yyryydyyx/rs-cache/cache"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/consts"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/service"
 )
 
 func init() {

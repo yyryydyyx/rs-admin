@@ -11,12 +11,12 @@ import (
 	"context"
 
 	"github.com/gogf/gf/v2/frame/g"
-	"github.com/yyryydyyx/yyr-admin/v3/api/v1/system"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/consts"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/dao"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/model/do"
-	"github.com/yyryydyyx/yyr-admin/v3/internal/app/system/service"
-	"github.com/yyryydyyx/yyr-admin/v3/library/liberr"
+	"github.com/yyryydyyx/rs-admin/v3/api/v1/system"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/consts"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/dao"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/model/do"
+	"github.com/yyryydyyx/rs-admin/v3/internal/app/system/service"
+	"github.com/yyryydyyx/rs-admin/v3/library/liberr"
 )
 
 func init() {
