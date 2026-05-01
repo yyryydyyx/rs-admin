@@ -1,0 +1,72 @@
+2026-04-27T00:30:59.393+08:00 {e456212c23f5a918403abc267fc73214} 200 "GET http 20.0.0.11:8808 /api/v1/system/sysNotice/userList?userNickname=&pageNum=1&pageSize=10 HTTP/1.1" 6286.921, 20.0.0.1, "http://localhost/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserSelector.func1
+        /home/yyr/go/src/yyr-admin/internal/app/system/logic/sysUser/sys_user.go:552
+   2).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserSelector
+        /home/yyr/go/src/yyr-admin/internal/app/system/logic/sysUser/sys_user.go:524
+   3).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/controller.(*sysNoticeController).GetUserNameList
+        /home/yyr/go/src/yyr-admin/internal/app/system/controller/sys_notice.go:86
+   4).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        /home/yyr/go/src/yyr-admin/internal/app/system/logic/middleware/middleware.go:78
+   5).  github.com/yyryydyyx/rs-token/gftoken.(*GfToken).authMiddleware
+        /home/yyr/go/pkg/mod/github.com/yyryydyyx/rs-token@v0.0.0-20260426124100-1d2232e734a1/gftoken/middleware.go:21
+   6).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        /home/yyr/go/src/yyr-admin/internal/app/system/logic/middleware/middleware.go:63
+   7).  github.com/yyryydyyx/yyr-admin/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        /home/yyr/go/src/yyr-admin/internal/app/common/logic/middleware/middleware.go:30
+
+2026-04-27T00:30:59.399+08:00 {398e5b2c23f5a918413abc26ec024326} 200 "GET http 20.0.0.11:8808 /api/v1/system/sysNotice/userList?userNickname=&pageNum=1&pageSize=10 HTTP/1.1" 8101.170, 20.0.0.1, "http://localhost/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserSelector.func1
+        /home/yyr/go/src/yyr-admin/internal/app/system/logic/sysUser/sys_user.go:552
+   2).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserSelector
+        /home/yyr/go/src/yyr-admin/internal/app/system/logic/sysUser/sys_user.go:524
+   3).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/controller.(*sysNoticeController).GetUserNameList
+        /home/yyr/go/src/yyr-admin/internal/app/system/controller/sys_notice.go:86
+   4).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        /home/yyr/go/src/yyr-admin/internal/app/system/logic/middleware/middleware.go:78
+   5).  github.com/yyryydyyx/rs-token/gftoken.(*GfToken).authMiddleware
+        /home/yyr/go/pkg/mod/github.com/yyryydyyx/rs-token@v0.0.0-20260426124100-1d2232e734a1/gftoken/middleware.go:21
+   6).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        /home/yyr/go/src/yyr-admin/internal/app/system/logic/middleware/middleware.go:63
+   7).  github.com/yyryydyyx/yyr-admin/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        /home/yyr/go/src/yyr-admin/internal/app/common/logic/middleware/middleware.go:30
+
+2026-04-27T00:31:12.352+08:00 {8101ad3026f5a918463abc268cd1717b} 200 "GET http 20.0.0.11:8808 /api/v1/system/sysNotice/userList?userNickname=&pageNum=1&pageSize=10 HTTP/1.1" 3715.909, 20.0.0.1, "http://localhost/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserSelector.func1
+        /home/yyr/go/src/yyr-admin/internal/app/system/logic/sysUser/sys_user.go:552
+   2).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserSelector
+        /home/yyr/go/src/yyr-admin/internal/app/system/logic/sysUser/sys_user.go:524
+   3).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/controller.(*sysNoticeController).GetUserNameList
+        /home/yyr/go/src/yyr-admin/internal/app/system/controller/sys_notice.go:86
+   4).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        /home/yyr/go/src/yyr-admin/internal/app/system/logic/middleware/middleware.go:78
+   5).  github.com/yyryydyyx/rs-token/gftoken.(*GfToken).authMiddleware
+        /home/yyr/go/pkg/mod/github.com/yyryydyyx/rs-token@v0.0.0-20260426124100-1d2232e734a1/gftoken/middleware.go:21
+   6).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        /home/yyr/go/src/yyr-admin/internal/app/system/logic/middleware/middleware.go:63
+   7).  github.com/yyryydyyx/yyr-admin/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        /home/yyr/go/src/yyr-admin/internal/app/common/logic/middleware/middleware.go:30
+
+2026-04-27T00:31:12.357+08:00 {bf7fe63026f5a918483abc264575d3b1} 200 "GET http 20.0.0.11:8808 /api/v1/system/sysNotice/userList?userNickname=&pageNum=1&pageSize=10 HTTP/1.1" 5043.488, 20.0.0.1, "http://localhost/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36", 68, "Internal Panic", ""
+Stack:
+1. runtime error: invalid memory address or nil pointer dereference
+   1).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserSelector.func1
+        /home/yyr/go/src/yyr-admin/internal/app/system/logic/sysUser/sys_user.go:552
+   2).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic/sysUser.(*sSysUser).GetUserSelector
+        /home/yyr/go/src/yyr-admin/internal/app/system/logic/sysUser/sys_user.go:524
+   3).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/controller.(*sysNoticeController).GetUserNameList
+        /home/yyr/go/src/yyr-admin/internal/app/system/controller/sys_notice.go:86
+   4).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        /home/yyr/go/src/yyr-admin/internal/app/system/logic/middleware/middleware.go:78
+   5).  github.com/yyryydyyx/rs-token/gftoken.(*GfToken).authMiddleware
+        /home/yyr/go/pkg/mod/github.com/yyryydyyx/rs-token@v0.0.0-20260426124100-1d2232e734a1/gftoken/middleware.go:21
+   6).  github.com/yyryydyyx/yyr-admin/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        /home/yyr/go/src/yyr-admin/internal/app/system/logic/middleware/middleware.go:63
+   7).  github.com/yyryydyyx/yyr-admin/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        /home/yyr/go/src/yyr-admin/internal/app/common/logic/middleware/middleware.go:30
+
