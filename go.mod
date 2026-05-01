@@ -22,10 +22,11 @@ require (
 	github.com/shirou/gopsutil/v3 v3.23.2
 	github.com/sony/sonyflake v1.2.0
 	github.com/tencentyun/cos-go-sdk-v5 v0.7.34
+	github.com/tiger1103/gfast-token v1.0.10
 	github.com/wenlng/go-captcha v1.2.5
 	github.com/xuri/excelize/v2 v2.7.1
-	github.com/yyryydyyx/rs-cache v0.0.0-20260426094227-af9bbe530344
-	github.com/yyryydyyx/rs-token v0.0.0-20260426124100-1d2232e734a1
+	github.com/yyryydyyx/rs-cache v1.0.11
+	github.com/yyryydyyx/rs-token v1.0.10
 	golang.org/x/net v0.43.0
 	golang.org/x/tools v0.35.0
 )

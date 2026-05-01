@@ -10,7 +10,8 @@ package token
 import (
 	"github.com/gogf/gf/v2/frame/g"
 	"github.com/gogf/gf/v2/os/gctx"
-	"github.com/yyryydyyx/rs-token/gftoken"
+	"github.com/tiger1103/gfast-token/gftoken"
+
 	"github.com/yyryydyyx/yyr-admin/v3/internal/app/common/consts"
 	commonModel "github.com/yyryydyyx/yyr-admin/v3/internal/app/common/model"
 	"github.com/yyryydyyx/yyr-admin/v3/internal/app/wechat/service"
