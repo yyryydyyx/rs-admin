@@ -42,10 +42,8 @@ database:
     RotateBackupCompress: 9
 
   default:
-    #link: "mssql:sa:12345678@tcp(192.168.0.147:1433)/gfast-v32?encrypt=disable"
-    link:   "mysql:xxzx:xxzx123@tcp(127.0.0.1:3306)/gfast_v32?charset=utf8mb4&parseTime=true&loc=Local"
-    #link:   "pgsql:postgres:123456@tcp(192.168.0.214:5432)/gfast-v32"
-    #link: "dm:GFAST:12345678@tcp(127.0.0.1:5236)/GFASTV32"
+    link:   "mysql:xxzx:xxzx123@tcp(127.0.0.1:3306)/rs_admin?charset=utf8mb4&parseTime=true&loc=Local"
+    #link:   "pgsql:postgres:123456@tcp(192.168.0.214:5432)/rs_admin"
     debug:  true
     charset: "utf8mb4" #数据库编码
     #charset: "utf8" #数据库编码
@@ -86,7 +84,7 @@ system:
   dataDir: "./resource/data"
   cache:
     model: "redis"  #缓存模式 memory OR redis
-    prefix: "gFastV3Cache:" #缓存前缀
+    prefix: "rs-adminCache:" #缓存前缀
   verifyStatus: 1 #0关闭验证码 1图形验证码 2交互验证码
 
 #casbin配置
