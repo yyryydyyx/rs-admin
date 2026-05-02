@@ -4,7 +4,7 @@
 // 生成路径: internal/app/system/logic/sys_notice.go
 // 生成人：gfast
 // desc:通知公告
-// company:云南奇讯科技有限公司
+// company:仁软科技成都有限公司
 // ==========================================================================
 
 package logic

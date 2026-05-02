@@ -1,7 +1,7 @@
 /*
 * @desc:返回响应公共参数
-* @company:云南奇讯科技有限公司
-* @Author: yixiaohu<yxh669@qq.com>
+* @company:仁软科技成都有限公司
+* @Author: yyr<252924@qq.com>
 * @Date:   2022/10/27 16:30
  */
 

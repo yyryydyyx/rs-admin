@@ -4,7 +4,7 @@
 // 生成路径: internal/app/system/model/entity/sys_notice_read.go
 // 生成人：gfast
 // desc:已读记录
-// company:云南奇讯科技有限公司
+// company:仁软科技成都有限公司
 // ==========================================================================
 
 package do

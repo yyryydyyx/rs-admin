@@ -4,13 +4,14 @@
 // 生成路径: internal/app/system/dao/internal/sys_job.go
 // 生成人：gfast
 // desc:定时任务
-// company:云南奇讯科技有限公司
+// company:仁软科技成都有限公司
 // ==========================================================================
 
 package internal
 
 import (
 	"context"
+
 	"github.com/gogf/gf/v2/database/gdb"
 	"github.com/gogf/gf/v2/frame/g"
 )

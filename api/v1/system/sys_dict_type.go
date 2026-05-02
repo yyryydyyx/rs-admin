@@ -1,6 +1,6 @@
 /*
 * @desc:字典类型
-* @company:云南奇讯科技有限公司
+* @company:仁软科技成都有限公司
 * @Author: yixiaohu
 * @Date:   2022/4/14 21:30
  */

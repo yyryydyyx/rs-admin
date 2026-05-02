@@ -4,7 +4,7 @@
 // 生成路径: internal/app/system/model/sys_attachment.go
 // 生成人：gfast
 // desc:附件管理
-// company:云南奇讯科技有限公司
+// company:仁软科技成都有限公司
 // ==========================================================================
 
 package model

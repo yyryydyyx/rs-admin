@@ -1,7 +1,7 @@
 /*
 * @desc:xxxx功能描述
-* @company:云南奇讯科技有限公司
-* @Author: yixiaohu<yxh669@qq.com>
+* @company:仁软科技成都有限公司
+* @Author: yyr<252924@qq.com>
 * @Date:   2022/11/3 10:32
  */
 
