@@ -104,7 +104,7 @@ upload:
 
 # 代码生成配置
 gen:
-  author: "gfast"
+  author: "yyr"
   moduleName: "emp"
   apiName: "api/v1"
   packageName: "internal/app/emp"
