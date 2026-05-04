@@ -149,7 +149,8 @@ func (s *sSysAttachment) List(ctx context.Context, req *model.SysAttachmentSearc
 		if req.Status != "" {
 			m = m.Where(dao.SysAttachment.Columns().Status+" = ?", gconv.Bool(req.Status))
 		}
-		if req.CreatedAt != nil && len(req.CreatedAt) > 0 {
+		// if req.CreatedAt != nil && len(req.CreatedAt) > 0 {
+		if req.CreatedAt != nil {
 			if req.CreatedAt[0] != "" {
 				m = m.Where(dao.SysAttachment.Columns().UpdatedAt+" >= ?", gconv.Time(req.CreatedAt[0]))
 			}
