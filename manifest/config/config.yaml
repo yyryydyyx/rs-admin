@@ -116,16 +116,16 @@ gen:
 
 # 消息队列
 mqueue:
-  enable: false                                 # 开启消息队列功能
+  enable: true                                 # 开启消息队列功能
   closeWaitTime: 5                             # 关闭服务器时等待刷盘时间(秒),最好不要小于5
   driver: "diskQueue"                          # 驱动类型 nsq|diskQueue|rocketmq
   channel: "channel"                           # 默认频道名称
   nsq:
-    address: "192.168.75.3"                    # nsq地址
+    address: "20.0.0.11"                    # nsq地址
     producer_port: 4150                        # 生产者端口
     consumer_port: 4161                        # 消费者http端口
   rocketmq:
-    nameServers: "192.168.75.3:9876"           # 服务器地址
+    nameServers: "20.0.0.11:9876"           # 服务器地址
     retry: 2                                   # 重试次数
     logLevel: "warn"                           # 日志级别 debug|error|warn|fatal
   diskQueue:
