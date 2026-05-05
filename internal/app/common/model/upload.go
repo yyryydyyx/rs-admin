@@ -20,11 +20,12 @@ type UpFile struct {
 }
 
 type UploadResponse struct {
-	Size     int64  `json:"size"   dc:"文件大小"`
-	Path     string `json:"path" dc:"文件相对路径"`
-	FullPath string `json:"fullPath" dc:"文件绝对路径"`
-	Name     string `json:"name" dc:"文件名称"`
-	Type     string `json:"type" dc:"文件类型"`
+	Size        int64  `json:"size"   dc:"文件大小"`
+	Path        string `json:"path" dc:"文件相对路径"`
+	Description string `json:"description" dc:"文件描述"`
+	FullPath    string `json:"fullPath" dc:"文件绝对路径"`
+	Name        string `json:"name" dc:"文件名称"`
+	Type        string `json:"type" dc:"文件类型"`
 }
 
 // CheckMultipartReq 检查文件分片

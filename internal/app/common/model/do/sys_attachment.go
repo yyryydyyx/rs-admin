@@ -19,7 +19,7 @@ type SysAttachment struct {
 	Kind        interface{} // 上传类型
 	MimeType    interface{} // 扩展类型
 	Path        interface{} // 本地路径
-	Description interface{} // 说明
+	Description interface{} // 文件描述
 	Size        interface{} // 文件大小
 	Ext         interface{} // 扩展名
 	Md5         interface{} // md5校验码

@@ -17,7 +17,7 @@ type SysAttachment struct {
 	Kind        string      `json:"kind"        orm:"kind"        description:"上传类型"`
 	MimeType    string      `json:"mimeType"    orm:"mime_type"   description:"扩展类型"`
 	Path        string      `json:"path"        orm:"path"        description:"本地路径"`
-	Description string      `json:"description" orm:"description" description:"说明"`
+	Description string      `json:"description" orm:"description" description:"文件描述"`
 	Size        int64       `json:"size"        orm:"size"        description:"文件大小"`
 	Ext         string      `json:"ext"         orm:"ext"         description:"扩展名"`
 	Md5         string      `json:"md5"         orm:"md5"         description:"md5校验码"`

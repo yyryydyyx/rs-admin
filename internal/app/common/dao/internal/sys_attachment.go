@@ -28,7 +28,7 @@ type SysAttachmentColumns struct {
 	Kind        string // 上传类型
 	MimeType    string // 扩展类型
 	Path        string // 本地路径
-	Description string // 说明
+	Description string // 文件描述
 	Size        string // 文件大小
 	Ext         string // 扩展名
 	Md5         string // md5校验码

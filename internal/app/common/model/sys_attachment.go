@@ -17,18 +17,18 @@ import (
 // SysAttachmentInfoRes is the golang structure for table sys_attachment.
 type SysAttachmentInfoRes struct {
 	gmeta.Meta  `orm:"table:sys_attachment"`
-	Id          int64       `orm:"id,primary" json:"id" dc:"文件ID"`         // 文件ID
-	AppId       string      `orm:"app_id" json:"appId" dc:"应用ID"`          // 应用ID
-	Drive       uint        `orm:"drive" json:"drive" dc:"上传驱动"`           // 上传驱动
-	Name        string      `orm:"name" json:"name" dc:"文件原始名"`            // 文件原始名
-	Kind        string      `orm:"kind" json:"kind" dc:"上传类型"`             // 上传类型
-	MimeType    string      `orm:"mime_type" json:"mimeType" dc:"扩展类型"`    // 扩展类型
-	Path        string      `orm:"path" json:"path" dc:"本地路径"`             // 本地路径
-	Description string      `orm:"description" json:"description" dc:"说明"` // 说明
-	Size        int64       `orm:"size" json:"size" dc:"文件大小"`             // 文件大小
-	Ext         string      `orm:"ext" json:"ext" dc:"扩展名"`                // 扩展名
-	Md5         string      `orm:"md5" json:"md5" dc:"md5校验码"`             // md5校验码
-	CreatedBy   int64       `orm:"created_by" json:"createdBy" dc:"上传人ID"` // 上传人ID
+	Id          int64       `orm:"id,primary" json:"id" dc:"文件ID"`           // 文件ID
+	AppId       string      `orm:"app_id" json:"appId" dc:"应用ID"`            // 应用ID
+	Drive       uint        `orm:"drive" json:"drive" dc:"上传驱动"`             // 上传驱动
+	Name        string      `orm:"name" json:"name" dc:"文件原始名"`              // 文件原始名
+	Kind        string      `orm:"kind" json:"kind" dc:"上传类型"`               // 上传类型
+	MimeType    string      `orm:"mime_type" json:"mimeType" dc:"扩展类型"`      // 扩展类型
+	Path        string      `orm:"path" json:"path" dc:"本地路径"`               // 本地路径
+	Description string      `orm:"description" json:"description" dc:"文件描述"` // 文件描述
+	Size        int64       `orm:"size" json:"size" dc:"文件大小"`               // 文件大小
+	Ext         string      `orm:"ext" json:"ext" dc:"扩展名"`                  // 扩展名
+	Md5         string      `orm:"md5" json:"md5" dc:"md5校验码"`               // md5校验码
+	CreatedBy   int64       `orm:"created_by" json:"createdBy" dc:"上传人ID"`   // 上传人ID
 	CreatedUser LinkUserRes `orm:"with:id=created_by" json:"createdUser"`
 	Status      bool        `orm:"status" json:"status" dc:"状态"`          // 状态
 	CreatedAt   *gtime.Time `orm:"created_at" json:"createdAt" dc:"创建时间"` // 创建时间
@@ -48,7 +48,7 @@ type SysAttachmentListRes struct {
 	Name        string      `json:"name" dc:"文件原始名"`
 	Kind        string      `json:"kind" dc:"上传类型"`
 	Path        string      `json:"path" dc:"本地路径"`
-	Description string      `json:"description" dc:"说明"`
+	Description string      `json:"description" dc:"文件描述"`
 	Size        int64       `json:"size" dc:"文件大小"`
 	Ext         string      `json:"ext" dc:"扩展名"`
 	Status      bool        `json:"status" dc:"状态"`
@@ -82,7 +82,7 @@ type SysAttachmentAddReq struct {
 	Kind        string `p:"kind"  dc:"上传类型"`
 	MimeType    string `p:"mimeType"  dc:"扩展类型"`
 	Path        string `p:"path"  dc:"本地路径"`
-	Description string `p:"description" dc:"说明"`
+	Description string `p:"description" dc:"文件描述"`
 	Size        int64  `p:"size"  dc:"文件大小"`
 	Ext         string `p:"ext"  dc:"扩展名"`
 	Md5         string `p:"md5"  dc:"md5校验码"`
@@ -106,7 +106,7 @@ type SysAttachmentEditReq struct {
 	Kind        string `p:"kind"  dc:"上传类型"`
 	MimeType    string `p:"mimeType"  dc:"扩展类型"`
 	Path        string `p:"path"  dc:"本地路径"`
-	Description string `p:"description" dc:"说明"`
+	Description string `p:"description" dc:"文件描述"`
 	Size        int64  `p:"size"  dc:"文件大小"`
 	Ext         string `p:"ext"  dc:"扩展名"`
 	Md5         string `p:"md5"  dc:"md5校验码"`
