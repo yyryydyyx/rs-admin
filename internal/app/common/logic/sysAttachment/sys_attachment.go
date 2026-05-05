@@ -177,17 +177,18 @@ func (s *sSysAttachment) List(ctx context.Context, req *model.SysAttachmentSearc
 		listRes.List = make([]*model.SysAttachmentListRes, len(res))
 		for k, v := range res {
 			listRes.List[k] = &model.SysAttachmentListRes{
-				Id:        v.Id,
-				AppId:     v.AppId,
-				Drive:     v.Drive,
-				Name:      v.Name,
-				Kind:      v.Kind,
-				Path:      v.Path,
-				Size:      v.Size,
-				Ext:       v.Ext,
-				Status:    v.Status,
-				CreatedAt: v.CreatedAt,
-				UpdatedAt: v.UpdatedAt,
+				Id:          v.Id,
+				AppId:       v.AppId,
+				Drive:       v.Drive,
+				Name:        v.Name,
+				Kind:        v.Kind,
+				Path:        v.Path,
+				Description: v.Description,
+				Size:        v.Size,
+				Ext:         v.Ext,
+				Status:      v.Status,
+				CreatedAt:   v.CreatedAt,
+				UpdatedAt:   v.UpdatedAt,
 			}
 		}
 	})
@@ -218,17 +219,18 @@ func (s *sSysAttachment) GetByMd5(ctx context.Context, md5 string) (res *model.S
 func (s *sSysAttachment) AddUpload(ctx context.Context, req *model.UploadResponse, attr *model.SysAttachmentAddAttribute) (err error) {
 	ext := gstr.SubStrRune(req.Name, gstr.PosRRune(req.Name, ".")+1, gstr.LenRune(req.Name)-1)
 	err = s.Add(ctx, &model.SysAttachmentAddReq{
-		AppId:     attr.AppId,
-		Drive:     attr.Driver,
-		Name:      req.Name,
-		Kind:      s.getFileKind(ext),
-		MimeType:  req.Type,
-		Path:      req.Path,
-		Size:      req.Size,
-		Ext:       ext,
-		Md5:       attr.Md5,
-		Status:    true,
-		CreatedBy: attr.UserId,
+		AppId:       attr.AppId,
+		Drive:       attr.Driver,
+		Name:        req.Name,
+		Kind:        s.getFileKind(ext),
+		MimeType:    req.Type,
+		Path:        req.Path,
+		Description: req.Description,
+		Size:        req.Size,
+		Ext:         ext,
+		Md5:         attr.Md5,
+		Status:      true,
+		CreatedBy:   attr.UserId,
 	})
 	return
 }
@@ -236,17 +238,18 @@ func (s *sSysAttachment) AddUpload(ctx context.Context, req *model.UploadRespons
 func (s *sSysAttachment) Add(ctx context.Context, req *model.SysAttachmentAddReq) (err error) {
 	err = g.Try(ctx, func(ctx context.Context) {
 		_, err = dao.SysAttachment.Ctx(ctx).Insert(do.SysAttachment{
-			AppId:     req.AppId,
-			Drive:     req.Drive,
-			Name:      req.Name,
-			Kind:      req.Kind,
-			MimeType:  req.MimeType,
-			Path:      req.Path,
-			Size:      req.Size,
-			Ext:       req.Ext,
-			Md5:       req.Md5,
-			Status:    req.Status,
-			CreatedBy: req.CreatedBy,
+			AppId:       req.AppId,
+			Drive:       req.Drive,
+			Name:        req.Name,
+			Kind:        req.Kind,
+			MimeType:    req.MimeType,
+			Path:        req.Path,
+			Description: req.Description,
+			Size:        req.Size,
+			Ext:         req.Ext,
+			Md5:         req.Md5,
+			Status:      req.Status,
+			CreatedBy:   req.CreatedBy,
 		})
 		liberr.ErrIsNil(ctx, err, "添加失败")
 	})
@@ -256,16 +259,17 @@ func (s *sSysAttachment) Add(ctx context.Context, req *model.SysAttachmentAddReq
 func (s *sSysAttachment) Edit(ctx context.Context, req *model.SysAttachmentEditReq) (err error) {
 	err = g.Try(ctx, func(ctx context.Context) {
 		_, err = dao.SysAttachment.Ctx(ctx).WherePri(req.Id).Update(do.SysAttachment{
-			AppId:    req.AppId,
-			Drive:    req.Drive,
-			Name:     req.Name,
-			Kind:     req.Kind,
-			MimeType: req.MimeType,
-			Path:     req.Path,
-			Size:     req.Size,
-			Ext:      req.Ext,
-			Md5:      req.Md5,
-			Status:   req.Status,
+			AppId:       req.AppId,
+			Drive:       req.Drive,
+			Name:        req.Name,
+			Kind:        req.Kind,
+			MimeType:    req.MimeType,
+			Path:        req.Path,
+			Description: req.Description,
+			Size:        req.Size,
+			Ext:         req.Ext,
+			Md5:         req.Md5,
+			Status:      req.Status,
 		})
 		liberr.ErrIsNil(ctx, err, "修改失败")
 	})

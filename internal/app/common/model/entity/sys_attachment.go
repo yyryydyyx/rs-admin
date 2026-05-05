@@ -1,34 +1,28 @@
-// ==========================================================================
-// GFast自动生成model entity操作代码。
-// 生成日期：2024-10-23 16:10:12
-// 生成路径: internal/app/system/model/entity/sys_attachment.go
-// 生成人：gfast
-// desc:附件管理
-// company:仁软科技成都有限公司
-// ==========================================================================
+// =================================================================================
+// Code generated and maintained by GoFrame CLI tool. DO NOT EDIT.
+// =================================================================================
 
 package entity
 
 import (
 	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/gogf/gf/v2/util/gmeta"
 )
 
 // SysAttachment is the golang structure for table sys_attachment.
 type SysAttachment struct {
-	gmeta.Meta `orm:"table:sys_attachment"`
-	Id         int64       `orm:"id,primary" json:"id"`        // 文件ID
-	AppId      string      `orm:"app_id" json:"appId"`         // 应用ID
-	Drive      string      `orm:"drive" json:"drive"`          // 上传驱动
-	Name       string      `orm:"name" json:"name"`            // 文件原始名
-	Kind       string      `orm:"kind" json:"kind"`            // 上传类型
-	MimeType   string      `orm:"mime_type" json:"mimeType"`   // 扩展类型
-	Path       string      `orm:"path" json:"path"`            // 本地路径
-	Size       int64       `orm:"size" json:"size"`            // 文件大小
-	Ext        string      `orm:"ext" json:"ext"`              // 扩展名
-	Md5        string      `orm:"md5" json:"md5"`              // md5校验码
-	CreatedBy  int64       `orm:"created_by" json:"createdBy"` // 上传人ID
-	Status     bool        `orm:"status" json:"status"`        // 状态
-	CreatedAt  *gtime.Time `orm:"created_at" json:"createdAt"` // 创建时间
-	UpdatedAt  *gtime.Time `orm:"updated_at" json:"updatedAt"` // 修改时间
+	Id          int64       `json:"id"          orm:"id"          description:"文件ID"`
+	AppId       string      `json:"appId"       orm:"app_id"      description:"应用ID"`
+	Drive       string      `json:"drive"       orm:"drive"       description:"上传驱动"`
+	Name        string      `json:"name"        orm:"name"        description:"文件原始名"`
+	Kind        string      `json:"kind"        orm:"kind"        description:"上传类型"`
+	MimeType    string      `json:"mimeType"    orm:"mime_type"   description:"扩展类型"`
+	Path        string      `json:"path"        orm:"path"        description:"本地路径"`
+	Description string      `json:"description" orm:"description" description:"说明"`
+	Size        int64       `json:"size"        orm:"size"        description:"文件大小"`
+	Ext         string      `json:"ext"         orm:"ext"         description:"扩展名"`
+	Md5         string      `json:"md5"         orm:"md5"         description:"md5校验码"`
+	CreatedBy   int64       `json:"createdBy"   orm:"created_by"  description:"上传人ID"`
+	Status      int         `json:"status"      orm:"status"      description:"状态"`
+	CreatedAt   *gtime.Time `json:"createdAt"   orm:"created_at"  description:"创建时间"`
+	UpdatedAt   *gtime.Time `json:"updatedAt"   orm:"updated_at"  description:"修改时间"`
 }

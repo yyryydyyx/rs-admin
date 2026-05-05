@@ -3,8 +3,8 @@ gfcli:
   gen:
     dao:
       - link:            "mysql:xxzx:xxzx123@tcp(127.0.0.1:3306)/rs_admin?charset=utf8mb4&parseTime=true&loc=Local"
-        tables:          "sys_role_dept"
+        tables:          "sys_attachment"
         removePrefix:    "gf_"
         descriptionTag:  true
         noModelComment:  true
-        path: "./internal/app/system"
+        path: "./internal/app/common"
