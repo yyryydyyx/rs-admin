@@ -11,7 +11,7 @@
  Target Server Version : 80045 (8.0.45-0ubuntu0.22.04.1)
  File Encoding         : 65001
 
- Date: 05/05/2026 16:19:42
+ Date: 05/05/2026 17:04:14
 */
 
 SET NAMES utf8mb4;
@@ -4077,7 +4077,7 @@ CREATE TABLE `sys_attachment`  (
   `kind` varchar(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '上传类型',
   `mime_type` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '' COMMENT '扩展类型',
   `path` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '本地路径',
-  `description` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '说明',
+  `description` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '文件描述',
   `size` bigint NULL DEFAULT 0 COMMENT '文件大小',
   `ext` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '扩展名',
   `md5` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT 'md5校验码',
@@ -4104,7 +4104,7 @@ INSERT INTO `sys_attachment` VALUES (11, 'system', '0', 'co9copop81co0gysbz.jpg'
 INSERT INTO `sys_attachment` VALUES (12, 'system', '0', 'fe4b0029b62a1c4bab23ff099a61b31d.jpeg', 'image', 'image/jpeg', 'upload_file/2026-05-04/di9yc618breqxx2gla.jpeg', NULL, 118166, 'jpeg', 'ccd7cef82492dd66e17c36eda04cf3d0', 31, 1, '2026-05-04 22:11:53', '2026-05-04 22:11:53');
 INSERT INTO `sys_attachment` VALUES (13, 'system', '0', 'video.mp4', 'video', 'video/mp4', 'upload_file/2026-05-04/di9yfz0kowmldtwmw1.mp4', NULL, 7033146, 'mp4', '0033ba3c5b3f7e8e924575aa53fd15f8', 31, 1, '2026-05-04 22:16:51', '2026-05-04 22:18:23');
 INSERT INTO `sys_attachment` VALUES (14, 'system', '0', 'video1.mp4', 'video', 'application/octet-stream', 'upload_file/2026-05-04/dia0mafia7pkvk43co.mp4', NULL, 36766026, 'mp4', 'e9fcf0d52f6a33507b5053cb281b2f09', 31, 1, '2026-05-04 23:59:08', '2026-05-04 23:59:08');
-INSERT INTO `sys_attachment` VALUES (15, 'system', '0', 'video2.mp4', 'video', 'application/octet-stream', 'upload_file/2026-05-04/dia0mv3f9e40308iku.mp4', NULL, 5288602, 'mp4', '81d9a633f27c0147a48f71b25b0102f1', 31, 1, '2026-05-04 23:59:53', '2026-05-04 23:59:53');
+INSERT INTO `sys_attachment` VALUES (15, 'system', '0', 'video2.mp4', 'video', 'application/octet-stream', 'upload_file/2026-05-04/dia0mv3f9e40308iku.mp4', '这是新增描述字段', 5288602, 'mp4', '81d9a633f27c0147a48f71b25b0102f1', 31, 1, '2026-05-04 23:59:53', '2026-05-04 23:59:53');
 
 -- ----------------------------
 -- Table structure for sys_auth_rule
@@ -4484,7 +4484,7 @@ CREATE TABLE `sys_job_log`  (
   `created_at` datetime NULL DEFAULT NULL COMMENT '执行日期',
   `result` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL COMMENT '执行结果',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1289 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '任务日志表' ROW_FORMAT = DYNAMIC;
+) ENGINE = InnoDB AUTO_INCREMENT = 1290 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '任务日志表' ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------
 -- Records of sys_job_log
@@ -4525,6 +4525,7 @@ INSERT INTO `sys_job_log` VALUES (1285, 'checkUserOnline', '2026-05-04 23:50:05'
 INSERT INTO `sys_job_log` VALUES (1286, 'checkUserOnline', '2026-05-05 00:00:05', '在线用户定时更新，执行成功');
 INSERT INTO `sys_job_log` VALUES (1287, 'checkUserOnline', '2026-05-05 00:10:05', '在线用户定时更新，执行成功');
 INSERT INTO `sys_job_log` VALUES (1288, 'checkUserOnline', '2026-05-05 00:20:05', '在线用户定时更新，执行成功');
+INSERT INTO `sys_job_log` VALUES (1289, 'checkUserOnline', '2026-05-05 17:00:06', '在线用户定时更新，执行成功');
 
 -- ----------------------------
 -- Table structure for sys_login_log
@@ -4542,7 +4543,7 @@ CREATE TABLE `sys_login_log`  (
   `login_time` datetime NULL DEFAULT NULL COMMENT '登录时间',
   `module` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT '' COMMENT '登录模块',
   PRIMARY KEY (`info_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '系统访问记录' ROW_FORMAT = COMPACT;
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '系统访问记录' ROW_FORMAT = COMPACT;
 
 -- ----------------------------
 -- Records of sys_login_log
@@ -4551,6 +4552,7 @@ INSERT INTO `sys_login_log` VALUES (1, 'demo', '20.0.0.1', '', 'Chrome', 'Window
 INSERT INTO `sys_login_log` VALUES (2, 'demo', '20.0.0.1', '', 'Chrome', 'Windows 10', 1, '登录成功', '2026-05-02 23:15:16', '系统后台');
 INSERT INTO `sys_login_log` VALUES (3, 'demo', '20.0.0.1', '', 'Chrome', 'Windows 10', 1, '登录成功', '2026-05-03 22:21:02', '系统后台');
 INSERT INTO `sys_login_log` VALUES (4, 'demo', '20.0.0.1', '', 'Chrome', 'Windows 10', 1, '登录成功', '2026-05-04 21:31:34', '系统后台');
+INSERT INTO `sys_login_log` VALUES (5, 'demo', '20.0.0.1', '', 'Chrome', 'Windows 10', 1, '登录成功', '2026-05-05 16:55:00', '系统后台');
 
 -- ----------------------------
 -- Table structure for sys_notice
@@ -4625,7 +4627,7 @@ CREATE TABLE `sys_oper_log`  (
   `error_msg` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '错误消息',
   `oper_time` datetime NULL DEFAULT NULL COMMENT '操作时间',
   PRIMARY KEY (`oper_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 256 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '操作日志记录' ROW_FORMAT = COMPACT;
+) ENGINE = InnoDB AUTO_INCREMENT = 271 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '操作日志记录' ROW_FORMAT = COMPACT;
 
 -- ----------------------------
 -- Records of sys_oper_log
@@ -4885,6 +4887,21 @@ INSERT INTO `sys_oper_log` VALUES (252, '附件管理', 0, '/api/v1/system/sysAt
 INSERT INTO `sys_oper_log` VALUES (253, '附件管理', 0, '/api/v1/system/sysAttachment/list', 'GET', 1, 'demo', '财务部门', '/api/v1/system/sysAttachment/list?pageNum=1&pageSize=10', '20.0.0.1', '', '{\"pageNum\":\"1\",\"pageSize\":\"10\"}', NULL, '2026-05-05 00:03:29');
 INSERT INTO `sys_oper_log` VALUES (254, '', 0, '/api/v1/system/dict/data/getDictData', 'GET', 1, 'demo', '财务部门', '/api/v1/system/dict/data/getDictData?dictType=sys_upload_file_type&defaultValue=', '20.0.0.1', '', '{\"defaultValue\":\"\",\"dictType\":\"sys_upload_file_type\"}', NULL, '2026-05-05 00:03:29');
 INSERT INTO `sys_oper_log` VALUES (255, '', 0, '/api/v1/system/dict/data/getDictData', 'GET', 1, 'demo', '财务部门', '/api/v1/system/dict/data/getDictData?dictType=sys_upload_drive&defaultValue=', '20.0.0.1', '', '{\"defaultValue\":\"\",\"dictType\":\"sys_upload_drive\"}', NULL, '2026-05-05 00:03:29');
+INSERT INTO `sys_oper_log` VALUES (256, '', 0, '/api/v1/system/dict/data/getDictData', 'GET', 1, 'demo', '财务部门', '/api/v1/system/dict/data/getDictData?dictType=sys_upload_file_type&defaultValue=', '20.0.0.1', '', '{\"defaultValue\":\"\",\"dictType\":\"sys_upload_file_type\"}', NULL, '2026-05-05 16:55:22');
+INSERT INTO `sys_oper_log` VALUES (257, '', 0, '/api/v1/system/dict/data/getDictData', 'GET', 1, 'demo', '财务部门', '/api/v1/system/dict/data/getDictData?dictType=sys_upload_drive&defaultValue=', '20.0.0.1', '', '{\"defaultValue\":\"\",\"dictType\":\"sys_upload_drive\"}', NULL, '2026-05-05 16:55:22');
+INSERT INTO `sys_oper_log` VALUES (258, '附件管理', 0, '/api/v1/system/sysAttachment/list', 'GET', 1, 'demo', '财务部门', '/api/v1/system/sysAttachment/list?pageNum=1&pageSize=10', '20.0.0.1', '', '{\"pageNum\":\"1\",\"pageSize\":\"10\"}', NULL, '2026-05-05 16:55:22');
+INSERT INTO `sys_oper_log` VALUES (259, '', 0, '/api/v1/system/dict/data/getDictData', 'GET', 1, 'demo', '财务部门', '/api/v1/system/dict/data/getDictData?dictType=sys_upload_file_type&defaultValue=', '20.0.0.1', '', '{\"defaultValue\":\"\",\"dictType\":\"sys_upload_file_type\"}', NULL, '2026-05-05 16:59:36');
+INSERT INTO `sys_oper_log` VALUES (260, '', 0, '/api/v1/system/dict/data/getDictData', 'GET', 1, 'demo', '财务部门', '/api/v1/system/dict/data/getDictData?dictType=sys_upload_drive&defaultValue=', '20.0.0.1', '', '{\"defaultValue\":\"\",\"dictType\":\"sys_upload_drive\"}', NULL, '2026-05-05 16:59:36');
+INSERT INTO `sys_oper_log` VALUES (261, '附件管理', 0, '/api/v1/system/sysAttachment/list', 'GET', 1, 'demo', '财务部门', '/api/v1/system/sysAttachment/list?pageNum=1&pageSize=10', '20.0.0.1', '', '{\"pageNum\":\"1\",\"pageSize\":\"10\"}', NULL, '2026-05-05 16:59:36');
+INSERT INTO `sys_oper_log` VALUES (262, '', 0, '/api/v1/system/dict/data/getDictData', 'GET', 1, 'demo', '财务部门', '/api/v1/system/dict/data/getDictData?dictType=sys_upload_file_type&defaultValue=', '20.0.0.1', '', '{\"defaultValue\":\"\",\"dictType\":\"sys_upload_file_type\"}', NULL, '2026-05-05 17:00:58');
+INSERT INTO `sys_oper_log` VALUES (263, '附件管理', 0, '/api/v1/system/sysAttachment/list', 'GET', 1, 'demo', '财务部门', '/api/v1/system/sysAttachment/list?pageNum=1&pageSize=10', '20.0.0.1', '', '{\"pageNum\":\"1\",\"pageSize\":\"10\"}', NULL, '2026-05-05 17:00:58');
+INSERT INTO `sys_oper_log` VALUES (264, '', 0, '/api/v1/system/dict/data/getDictData', 'GET', 1, 'demo', '财务部门', '/api/v1/system/dict/data/getDictData?dictType=sys_upload_drive&defaultValue=', '20.0.0.1', '', '{\"defaultValue\":\"\",\"dictType\":\"sys_upload_drive\"}', NULL, '2026-05-05 17:00:58');
+INSERT INTO `sys_oper_log` VALUES (265, '附件管理', 0, '/api/v1/system/sysAttachment/list', 'GET', 1, 'demo', '财务部门', '/api/v1/system/sysAttachment/list?pageNum=1&pageSize=10', '20.0.0.1', '', '{\"pageNum\":\"1\",\"pageSize\":\"10\"}', NULL, '2026-05-05 17:01:41');
+INSERT INTO `sys_oper_log` VALUES (266, '', 0, '/api/v1/system/dict/data/getDictData', 'GET', 1, 'demo', '财务部门', '/api/v1/system/dict/data/getDictData?dictType=sys_upload_file_type&defaultValue=', '20.0.0.1', '', '{\"defaultValue\":\"\",\"dictType\":\"sys_upload_file_type\"}', NULL, '2026-05-05 17:01:41');
+INSERT INTO `sys_oper_log` VALUES (267, '', 0, '/api/v1/system/dict/data/getDictData', 'GET', 1, 'demo', '财务部门', '/api/v1/system/dict/data/getDictData?dictType=sys_upload_drive&defaultValue=', '20.0.0.1', '', '{\"defaultValue\":\"\",\"dictType\":\"sys_upload_drive\"}', NULL, '2026-05-05 17:01:41');
+INSERT INTO `sys_oper_log` VALUES (268, '', 0, '/api/v1/system/dict/data/getDictData', 'GET', 1, 'demo', '财务部门', '/api/v1/system/dict/data/getDictData?dictType=sys_upload_file_type&defaultValue=', '20.0.0.1', '', '{\"defaultValue\":\"\",\"dictType\":\"sys_upload_file_type\"}', NULL, '2026-05-05 17:03:37');
+INSERT INTO `sys_oper_log` VALUES (269, '', 0, '/api/v1/system/dict/data/getDictData', 'GET', 1, 'demo', '财务部门', '/api/v1/system/dict/data/getDictData?dictType=sys_upload_drive&defaultValue=', '20.0.0.1', '', '{\"defaultValue\":\"\",\"dictType\":\"sys_upload_drive\"}', NULL, '2026-05-05 17:03:37');
+INSERT INTO `sys_oper_log` VALUES (270, '附件管理', 0, '/api/v1/system/sysAttachment/list', 'GET', 1, 'demo', '财务部门', '/api/v1/system/sysAttachment/list?pageNum=1&pageSize=10', '20.0.0.1', '', '{\"pageNum\":\"1\",\"pageSize\":\"10\"}', NULL, '2026-05-05 17:03:37');
 
 -- ----------------------------
 -- Table structure for sys_post
@@ -5065,7 +5082,7 @@ INSERT INTO `sys_user` VALUES (22, 'yxfmlbb', '15969423326', '大数据部门测
 INSERT INTO `sys_user` VALUES (23, 'wangming', '18687460581', '王明', 0, '542a6e44dbac171f260fc4a032cd5522', 'dlqVVBTADg', 1, '', 0, '', 0, '', 1, '', '', '::1', '2023-11-03 16:03:56', '2021-06-22 17:58:00', '2021-06-22 17:58:00', NULL, 'oHUVQ6CKETZ7gvqkHdJqdlw2WXNE');
 INSERT INTO `sys_user` VALUES (24, 'zhk', '13699885591', '综合科', 0, '542a6e44dbac171f260fc4a032cd5522', 'dlqVVBTADg', 1, '', 0, '', 0, '', 1, '', '', '192.168.0.146', NULL, '2021-06-22 17:58:00', '2021-06-22 17:58:00', NULL, '');
 INSERT INTO `sys_user` VALUES (28, 'demo3', '18699888855', '测试账号1', 0, '542a6e44dbac171f260fc4a032cd5522', 'dlqVVBTADg', 1, '123132@qq.com', 0, '', 109, '', 1, '', '', '192.168.0.229', NULL, '2021-06-22 17:58:00', '2021-06-22 17:58:00', NULL, '');
-INSERT INTO `sys_user` VALUES (31, 'demo', '15334455789', '李四', 0, '6dd68eea81e0fca319add0bd58c3fdf6', '46PvWe1Sl7', 1, '123@qq.com', 2, 'upload_file/2024-07-29/d31lsrb6o3rgmrdiih.jpg', 109, '3', 1, '云南省曲靖市22223', '生活变的再糟糕，也不妨碍我变得更好', '20.0.0.1', '2026-05-04 21:31:34', '2021-06-22 17:58:00', '2024-07-29 08:41:22', NULL, '');
+INSERT INTO `sys_user` VALUES (31, 'demo', '15334455789', '李四', 0, '6dd68eea81e0fca319add0bd58c3fdf6', '46PvWe1Sl7', 1, '123@qq.com', 2, 'upload_file/2024-07-29/d31lsrb6o3rgmrdiih.jpg', 109, '3', 1, '云南省曲靖市22223', '生活变的再糟糕，也不妨碍我变得更好', '20.0.0.1', '2026-05-05 16:55:00', '2021-06-22 17:58:00', '2024-07-29 08:41:22', NULL, '');
 INSERT INTO `sys_user` VALUES (32, 'demo100', '18699888859', '测试账号1', 0, '542a6e44dbac171f260fc4a032cd5522', 'dlqVVBTADg', 1, '', 0, '', 0, '', 1, '', '', '[::1]', '2021-11-24 18:01:21', '2021-06-22 17:58:00', '2021-06-22 17:58:00', NULL, '');
 INSERT INTO `sys_user` VALUES (33, 'demo110', '18699888853', '测试账号1', 0, '542a6e44dbac171f260fc4a032cd5522', 'dlqVVBTADg', 1, '', 0, '', 0, '', 1, '', '', '', NULL, '2021-06-22 17:58:00', '2021-06-22 17:58:00', NULL, '');
 INSERT INTO `sys_user` VALUES (34, 'yxfmlbb2', '15969423327', '研发部门测试', 0, '542a6e44dbac171f260fc4a032cd5522', 'dlqVVBTADg', 1, '1111@qqq.com', 1, '', 103, '', 0, '', '', '127.0.0.1', NULL, '2021-06-22 17:58:00', '2021-06-22 17:58:00', NULL, '');
@@ -5094,12 +5111,12 @@ CREATE TABLE `sys_user_online`  (
   `os` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '' COMMENT '操作系统',
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE INDEX `uni_token`(`token` ASC) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '用户在线状态表' ROW_FORMAT = COMPACT;
+) ENGINE = InnoDB AUTO_INCREMENT = 13 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci COMMENT = '用户在线状态表' ROW_FORMAT = COMPACT;
 
 -- ----------------------------
 -- Records of sys_user_online
 -- ----------------------------
-INSERT INTO `sys_user_online` VALUES (11, 'eb34faa999cce5fd1f3855f522dab5c6', '7ZUSfVIf2HyYjcv86SKPPs29v003ECPEScsdYsYYqO34NPWToda7vzRxbAEp7oUuriUf9bmAKD+HSuTVFdqV/d8ZnNCKNhUZTuS3uNw6qK11TmzRNwf5T18i/nnSFpaakp0UZTkbau0NYLf0taY/CA==', '2026-05-04 21:31:34', 'demo', '20.0.0.1', 'Chrome', 'Windows 10');
+INSERT INTO `sys_user_online` VALUES (12, 'f2fa0d20dda1725960543e92221e4fbf', '7ZUSfVIf2HyYjcv86SKPPs29v003ECPEScsdYsYYqO34NPWToda7vzRxbAEp7oUuD7WWblnq5Faoz0spFD2GzKsSueaawF3Xzc3xT4/yeJni2454Xj66nsRy4pJikMxG4IogXSa4DylVQx4U4xilJA==', '2026-05-05 16:55:00', 'demo', '20.0.0.1', 'Chrome', 'Windows 10');
 
 -- ----------------------------
 -- Table structure for sys_user_post

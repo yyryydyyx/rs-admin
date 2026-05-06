@@ -17,6 +17,7 @@ type uploadController struct{}
 
 // 上传单图
 func (c *uploadController) SingleImg(ctx context.Context, req *system.UploadSingleImgReq) (res *system.UploadSingleRes, err error) {
+	println("==================SingleImg：", req.description)
 	file := req.File
 	v, _ := g.Cfg().Get(ctx, "upload.default")
 	response, err := commonService.Upload().UploadFile(ctx, file, commonConsts.CheckFileTypeImg, v.Int(), service.Context().Get(ctx).User.Id, consts.UploadAppId)

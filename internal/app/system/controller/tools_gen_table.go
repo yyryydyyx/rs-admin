@@ -91,7 +91,7 @@ func (c *toolsGenTableController) Preview(ctx context.Context, req *system.Tools
 		return
 	}
 	// 将extendData.AttachmentList中的每一项的Data与res.Data合并到一个map中
-	if extendData.AttachmentList != nil && len(extendData.AttachmentList) > 0 {
+	if extendData.AttachmentList != nil {
 		for _, attachment := range extendData.AttachmentList {
 			if attachment.Data != nil && attachment.Attr != nil {
 				for key, value := range attachment.Data {
