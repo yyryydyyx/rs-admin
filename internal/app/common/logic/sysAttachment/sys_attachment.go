@@ -217,6 +217,7 @@ func (s *sSysAttachment) GetByMd5(ctx context.Context, md5 string) (res *model.S
 }
 
 func (s *sSysAttachment) AddUpload(ctx context.Context, req *model.UploadResponse, attr *model.SysAttachmentAddAttribute) (err error) {
+	println("==================Description：%s", "1111", req.Description)
 	ext := gstr.SubStrRune(req.Name, gstr.PosRRune(req.Name, ".")+1, gstr.LenRune(req.Name)-1)
 	err = s.Add(ctx, &model.SysAttachmentAddReq{
 		AppId:       attr.AppId,

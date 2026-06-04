@@ -215,9 +215,9 @@ func (c *uEditorController) uEditorUpload(ctx context.Context, upFile *ghttp.Upl
 	)
 	v, _ := g.Cfg().Get(ctx, "upload.default")
 	if fType == "image" {
-		info, err = commonService.Upload().UploadFile(ctx, upFile, commonConsts.CheckFileTypeImg, v.Int(), service.Context().Get(ctx).User.Id, consts.UploadAppId)
+		info, err = commonService.Upload().UploadFile(ctx, upFile, commonConsts.CheckFileTypeImg, v.Int(), service.Context().Get(ctx).User.Id, consts.UploadAppId, "")
 	} else if fType == "file" {
-		info, err = commonService.Upload().UploadFile(ctx, upFile, commonConsts.CheckFileTypeFile, v.Int(), service.Context().Get(ctx).User.Id, consts.UploadAppId)
+		info, err = commonService.Upload().UploadFile(ctx, upFile, commonConsts.CheckFileTypeFile, v.Int(), service.Context().Get(ctx).User.Id, consts.UploadAppId, "")
 	}
 
 	if err != nil {

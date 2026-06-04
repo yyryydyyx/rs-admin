@@ -76,7 +76,7 @@ type DictTypeAllReq struct {
 	All    bool `p:"all"`
 }
 
-type DictTYpeAllRes struct {
+type DictTypeAllRes struct {
 	g.Meta   `mime:"application/json"`
 	DictType []*commonEntity.SysDictType `json:"dictType"`
 }

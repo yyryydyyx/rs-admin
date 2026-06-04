@@ -19,7 +19,7 @@ type uploadController struct{}
 func (c *uploadController) SingleImg(ctx context.Context, req *system.UploadSingleImgReq) (res *system.UploadSingleRes, err error) {
 	file := req.File
 	v, _ := g.Cfg().Get(ctx, "upload.default")
-	response, err := commonService.Upload().UploadFile(ctx, file, commonConsts.CheckFileTypeImg, v.Int(), service.Context().Get(ctx).User.Id, consts.UploadAppId)
+	response, err := commonService.Upload().UploadFile(ctx, file, commonConsts.CheckFileTypeImg, v.Int(), service.Context().Get(ctx).User.Id, consts.UploadAppId, req.Description)
 	if err != nil {
 		return
 	}
@@ -48,7 +48,7 @@ func (c *uploadController) MultipleImg(ctx context.Context, req *system.UploadMu
 func (c *uploadController) SingleFile(ctx context.Context, req *system.UploadSingleFileReq) (res *system.UploadSingleRes, err error) {
 	file := req.File
 	v, _ := g.Cfg().Get(ctx, "upload.default")
-	response, err := commonService.Upload().UploadFile(ctx, file, commonConsts.CheckFileTypeFile, v.Int(), service.Context().Get(ctx).User.Id, consts.UploadAppId)
+	response, err := commonService.Upload().UploadFile(ctx, file, commonConsts.CheckFileTypeFile, v.Int(), service.Context().Get(ctx).User.Id, consts.UploadAppId, req.Description)
 	if err != nil {
 		return
 	}

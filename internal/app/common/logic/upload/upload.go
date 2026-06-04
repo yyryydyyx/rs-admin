@@ -44,7 +44,7 @@ type sUpload struct{}
 // UploadFiles 上传多文件
 func (s *sUpload) UploadFiles(ctx context.Context, files []*ghttp.UploadFile, checkFileType string, source int, userId uint64, appId string) (result []*model.UploadResponse, err error) {
 	for _, item := range files {
-		f, e := s.UploadFile(ctx, item, checkFileType, source, userId, appId)
+		f, e := s.UploadFile(ctx, item, checkFileType, source, userId, appId, "")
 		if e != nil {
 			return
 		}
@@ -56,7 +56,7 @@ func (s *sUpload) UploadFiles(ctx context.Context, files []*ghttp.UploadFile, ch
 // UploadFile 上传单文件
 func (s *sUpload) UploadFile(ctx context.Context,
 	file *ghttp.UploadFile, checkFileType string, source int,
-	userId uint64, appId string) (result *model.UploadResponse, err error) {
+	userId uint64, appId string, description string) (result *model.UploadResponse, err error) {
 	err = g.Try(ctx, func(ctx context.Context) {
 		// 检查文件类型
 		err = s.CheckType(ctx, checkFileType, file.Filename)
@@ -113,12 +113,17 @@ func (s *sUpload) UploadFile(ctx context.Context,
 		}
 		result, err = uploader.Upload(ctx, file)
 		liberr.ErrIsNil(ctx, err)
+
+		result.Description = description
+		println("==================file", result.Name, result.Path, result.Size, result.Type, result.Description)
+
 		//保存上传文件到数据库
 		err = service.SysAttachment().AddUpload(ctx, result, &model.SysAttachmentAddAttribute{
-			Md5:    md5,
-			Driver: gconv.Uint(source),
-			UserId: userId,
-			AppId:  appId,
+			Md5:         md5,
+			Driver:      gconv.Uint(source),
+			UserId:      userId,
+			AppId:       appId,
+			Description: description,
 		})
 		liberr.ErrIsNil(ctx, err)
 	})

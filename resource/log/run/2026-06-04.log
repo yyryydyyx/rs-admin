@@ -1,11 +1,17 @@
+<<<<<<< HEAD
 2026-06-04T23:33:43.972+08:00 [INFO] mqueue service is running
 2026-06-04T23:33:43.974+08:00 [INFO] {dfaf9270a5eab518393531332ccf20c1} /home/yyr/go/src/rs-admin/internal/cmd/cmd.go:26: 
+=======
+2026-06-04T16:04:56.153+08:00 [INFO] mqueue service is running
+2026-06-04T16:04:56.156+08:00 [INFO] {728189d127d2b51888e4c27fd6ee414b} /home/yyr/go/src/rs-admin/internal/cmd/cmd.go:26: 
+>>>>>>> 846a8a57920598c1de8b50d27238376631ff41b4
     ____  _____       ___       __          _     
    / __ \/ ___/      /   | ____/ /___ ___  (_)___ 
   / /_/ /\__ \______/ /| |/ __  / __ `__ \/ / __ \
  / _, _/___/ /_____/ ___ / /_/ / / / / / / / / / /
 /_/ |_|/____/     /_/  |_\__,_/_/ /_/ /_/_/_/ /_/ 
 Version: 3.3.11
+<<<<<<< HEAD
 2026-06-04T23:33:43.983+08:00 [DEBU] /home/yyr/go/src/rs-admin/library/libWebsocket/init.go:20: start websocket..
 2026-06-04T23:33:45.911+08:00 [INFO] {9e8df0e3a5eab5183c353133d1746b1e} /home/yyr/go/pkg/mod/github.com/yyryydyyx/rs-token@v1.0.10/gftoken/gftoken.go:108: token is invalid
 2026-06-04T23:33:49.907+08:00 [INFO] {a18c3bd2a6eab5183d35313307ce448e} /home/yyr/go/pkg/mod/github.com/yyryydyyx/rs-token@v1.0.10/gftoken/gftoken.go:108: token is invalid
@@ -54,3 +60,11 @@ Version: 3.3.11
 /_/ |_|/____/     /_/  |_\__,_/_/ /_/ /_/_/_/ /_/ 
 Version: 3.3.11
 2026-06-04T23:54:12.205+08:00 [DEBU] /home/yyr/go/src/rs-admin/library/libWebsocket/init.go:20: start websocket..
+=======
+2026-06-04T16:04:56.189+08:00 [DEBU] /home/yyr/go/src/rs-admin/library/libWebsocket/init.go:20: start websocket..
+2026-06-04T16:06:31.625+08:00 [INFO] {ebd5db0b3ed2b5188be4c27f400f4405} /home/yyr/go/pkg/mod/github.com/yyryydyyx/rs-token@v1.0.10/gftoken/gftoken.go:108: token is invalid
+2026-06-04T16:06:31.680+08:00 [INFO] {3b052f0f3ed2b5188de4c27fb1659552} /home/yyr/go/pkg/mod/github.com/yyryydyyx/rs-token@v1.0.10/gftoken/gftoken.go:108: token is invalid
+2026-06-04T16:12:14.569+08:00 [INFO] DISKQUEUE(producer_topic_test): writeOne() opened resource/data/storage/diskqueue/producer_topic_test.diskqueue.000000.dat
+2026-06-04T16:12:14.570+08:00 [INFO] DISKQUEUE(producer_topic_test): readOne() opened resource/data/storage/diskqueue/producer_topic_test.diskqueue.000000.dat
+2026-06-04T16:12:26.160+08:00 [WARN] /home/yyr/go/src/rs-admin/internal/app/mqueue/controller/demo.go:74: 取消订阅 主题：producer_topic_test，频道：channel1
+>>>>>>> 846a8a57920598c1de8b50d27238376631ff41b4

@@ -17,6 +17,14 @@ type UEditorConfigReq struct {
 	UEditorReq
 }
 
+type UEditorConfigRes struct {
+	Action   string            `p:"action"`
+	Callback string            `p:"callback"`
+	File     *ghttp.UploadFile `p:"upfile" type:"file"`
+	Start    int               `p:"start"`
+	Size     int               `p:"size"`
+}
+
 type UEditorUpFileReq struct {
 	g.Meta `path:"/uEditor/action" tags:"系统后台/UEditor" method:"post" summary:"UEditor上传"`
 	UEditorReq

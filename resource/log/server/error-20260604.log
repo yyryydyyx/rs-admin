@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2026-06-04T23:57:35.302+08:00 {914157b2f2ebb51882f59303bbe0462c} 200 "POST http 20.0.0.11:8808 /api/v1/system/login HTTP/1.1" 520.701, 20.0.0.1, "http://localhost/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36", -1, "", ""
 Stack:
 1. 验证码输入错误
@@ -7,6 +8,9 @@ Stack:
         /home/yyr/go/src/rs-admin/internal/app/common/logic/middleware/middleware.go:30
 
 2026-06-04T23:57:38.998+08:00 {79cea18ef3ebb51884f59303258a0d48} 200 "POST http 20.0.0.11:8808 /api/v1/system/login HTTP/1.1" 684.511, 20.0.0.1, "http://localhost/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36", -1, "", ""
+=======
+2026-06-04T16:06:39.333+08:00 {77ff4cd73fd2b51890e4c27f356ca90a} 200 "POST http 20.0.0.11:8808 /api/v1/system/login HTTP/1.1" 1200.793, 20.0.0.1, "http://localhost/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36", -1, "", ""
+>>>>>>> 846a8a57920598c1de8b50d27238376631ff41b4
 Stack:
 1. 验证码输入错误
    1).  github.com/yyryydyyx/rs-admin/v3/internal/app/system/controller.(*loginController).Login
