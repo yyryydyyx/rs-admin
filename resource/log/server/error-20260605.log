@@ -1,0 +1,88 @@
+2026-06-05T00:09:34.766+08:00 {ae9d99359aecb518faf59303355a370f} 200 "POST http 20.0.0.11:8808 /api/v1/system/upload/checkMultipart HTTP/1.1" 3240.914, 20.0.0.1, "http://localhost/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36", 1003, "上传文件超过最大尺寸：50M", ""
+Stack:
+1. 上传文件超过最大尺寸：50M
+   1).  github.com/yyryydyyx/rs-admin/v3/library/liberr.NewCode
+        /home/yyr/go/src/rs-admin/library/liberr/err.go:37
+   2).  github.com/yyryydyyx/rs-admin/v3/library/liberr.ErrIsNil
+        /home/yyr/go/src/rs-admin/library/liberr/err.go:25
+   3).  github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/upload.(*sUpload).CheckMultipart.func1
+        /home/yyr/go/src/rs-admin/internal/app/common/logic/upload/upload.go:287
+   4).  github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/upload.(*sUpload).CheckMultipart
+        /home/yyr/go/src/rs-admin/internal/app/common/logic/upload/upload.go:280
+   5).  github.com/yyryydyyx/rs-admin/v3/internal/app/system/controller.(*uploadController).CheckMultipart
+        /home/yyr/go/src/rs-admin/internal/app/system/controller/upload.go:83
+   6).  github.com/yyryydyyx/rs-admin/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        /home/yyr/go/src/rs-admin/internal/app/system/logic/middleware/middleware.go:78
+   7).  github.com/yyryydyyx/rs-token/gftoken.(*GfToken).authMiddleware
+        /home/yyr/go/pkg/mod/github.com/yyryydyyx/rs-token@v1.0.10/gftoken/middleware.go:21
+   8).  github.com/yyryydyyx/rs-admin/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        /home/yyr/go/src/rs-admin/internal/app/system/logic/middleware/middleware.go:63
+   9).  github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        /home/yyr/go/src/rs-admin/internal/app/common/logic/middleware/middleware.go:30
+
+2026-06-05T00:35:20.799+08:00 {08cd512c02eeb518f2e06e73f44b23fb} 200 "POST http 20.0.0.11:8808 /api/v1/system/upload/checkMultipart HTTP/1.1" 3835.556, 20.0.0.1, "http://localhost/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36", 1003, "上传文件超过最大尺寸：50M", ""
+Stack:
+1. 上传文件超过最大尺寸：50M
+   1).  github.com/yyryydyyx/rs-admin/v3/library/liberr.NewCode
+        /home/yyr/go/src/rs-admin/library/liberr/err.go:37
+   2).  github.com/yyryydyyx/rs-admin/v3/library/liberr.ErrIsNil
+        /home/yyr/go/src/rs-admin/library/liberr/err.go:25
+   3).  github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/upload.(*sUpload).CheckMultipart.func1
+        /home/yyr/go/src/rs-admin/internal/app/common/logic/upload/upload.go:287
+   4).  github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/upload.(*sUpload).CheckMultipart
+        /home/yyr/go/src/rs-admin/internal/app/common/logic/upload/upload.go:280
+   5).  github.com/yyryydyyx/rs-admin/v3/internal/app/system/controller.(*uploadController).CheckMultipart
+        /home/yyr/go/src/rs-admin/internal/app/system/controller/upload.go:82
+   6).  github.com/yyryydyyx/rs-admin/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        /home/yyr/go/src/rs-admin/internal/app/system/logic/middleware/middleware.go:78
+   7).  github.com/yyryydyyx/rs-token/gftoken.(*GfToken).authMiddleware
+        /home/yyr/go/pkg/mod/github.com/yyryydyyx/rs-token@v1.0.10/gftoken/middleware.go:21
+   8).  github.com/yyryydyyx/rs-admin/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        /home/yyr/go/src/rs-admin/internal/app/system/logic/middleware/middleware.go:63
+   9).  github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        /home/yyr/go/src/rs-admin/internal/app/common/logic/middleware/middleware.go:30
+
+2026-06-05T00:38:05.862+08:00 {034eda9a28eeb51838e16e739d916cd3} 200 "POST http 20.0.0.11:8808 /api/v1/system/upload/checkMultipart HTTP/1.1" 3097.088, 20.0.0.1, "http://localhost/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36", 1003, "上传文件类型错误，只能包含后缀为：doc,docx,zip,xls,xlsx,rar,jpg,jpeg,gif,npm,png,mp4的文件。", ""
+Stack:
+1. 上传文件类型错误，只能包含后缀为：doc,docx,zip,xls,xlsx,rar,jpg,jpeg,gif,npm,png,mp4的文件。
+   1).  github.com/yyryydyyx/rs-admin/v3/library/liberr.NewCode
+        /home/yyr/go/src/rs-admin/library/liberr/err.go:37
+   2).  github.com/yyryydyyx/rs-admin/v3/library/liberr.ErrIsNil
+        /home/yyr/go/src/rs-admin/library/liberr/err.go:25
+   3).  github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/upload.(*sUpload).CheckMultipart.func1
+        /home/yyr/go/src/rs-admin/internal/app/common/logic/upload/upload.go:283
+   4).  github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/upload.(*sUpload).CheckMultipart
+        /home/yyr/go/src/rs-admin/internal/app/common/logic/upload/upload.go:280
+   5).  github.com/yyryydyyx/rs-admin/v3/internal/app/system/controller.(*uploadController).CheckMultipart
+        /home/yyr/go/src/rs-admin/internal/app/system/controller/upload.go:82
+   6).  github.com/yyryydyyx/rs-admin/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        /home/yyr/go/src/rs-admin/internal/app/system/logic/middleware/middleware.go:78
+   7).  github.com/yyryydyyx/rs-token/gftoken.(*GfToken).authMiddleware
+        /home/yyr/go/pkg/mod/github.com/yyryydyyx/rs-token@v1.0.10/gftoken/middleware.go:21
+   8).  github.com/yyryydyyx/rs-admin/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        /home/yyr/go/src/rs-admin/internal/app/system/logic/middleware/middleware.go:63
+   9).  github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        /home/yyr/go/src/rs-admin/internal/app/common/logic/middleware/middleware.go:30
+
+2026-06-05T00:38:40.435+08:00 {4db899a730eeb51841e16e73651dc78b} 200 "POST http 20.0.0.11:8808 /api/v1/system/upload/checkMultipart HTTP/1.1" 2540.178, 20.0.0.1, "http://localhost/", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36", 1003, "上传文件类型错误，只能包含后缀为：doc,docx,zip,xls,xlsx,rar,jpg,jpeg,gif,npm,png,mp4的文件。", ""
+Stack:
+1. 上传文件类型错误，只能包含后缀为：doc,docx,zip,xls,xlsx,rar,jpg,jpeg,gif,npm,png,mp4的文件。
+   1).  github.com/yyryydyyx/rs-admin/v3/library/liberr.NewCode
+        /home/yyr/go/src/rs-admin/library/liberr/err.go:37
+   2).  github.com/yyryydyyx/rs-admin/v3/library/liberr.ErrIsNil
+        /home/yyr/go/src/rs-admin/library/liberr/err.go:25
+   3).  github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/upload.(*sUpload).CheckMultipart.func1
+        /home/yyr/go/src/rs-admin/internal/app/common/logic/upload/upload.go:283
+   4).  github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/upload.(*sUpload).CheckMultipart
+        /home/yyr/go/src/rs-admin/internal/app/common/logic/upload/upload.go:280
+   5).  github.com/yyryydyyx/rs-admin/v3/internal/app/system/controller.(*uploadController).CheckMultipart
+        /home/yyr/go/src/rs-admin/internal/app/system/controller/upload.go:82
+   6).  github.com/yyryydyyx/rs-admin/v3/internal/app/system/logic/middleware.(*sMiddleware).Auth
+        /home/yyr/go/src/rs-admin/internal/app/system/logic/middleware/middleware.go:78
+   7).  github.com/yyryydyyx/rs-token/gftoken.(*GfToken).authMiddleware
+        /home/yyr/go/pkg/mod/github.com/yyryydyyx/rs-token@v1.0.10/gftoken/middleware.go:21
+   8).  github.com/yyryydyyx/rs-admin/v3/internal/app/system/logic/middleware.(*sMiddleware).Ctx
+        /home/yyr/go/src/rs-admin/internal/app/system/logic/middleware/middleware.go:63
+   9).  github.com/yyryydyyx/rs-admin/v3/internal/app/common/logic/middleware.(*sMiddleware).MiddlewareCORS
+        /home/yyr/go/src/rs-admin/internal/app/common/logic/middleware/middleware.go:30
+

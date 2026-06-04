@@ -4,7 +4,7 @@
 // 生成路径: internal/app/system/controller/sys_attachment.go
 // 生成人：gfast
 // desc:附件管理
-// company:仁软科技成都有限公司
+// company:云南奇讯科技有限公司
 // ==========================================================================
 
 package controller
@@ -27,7 +27,6 @@ var SysAttachment = new(sysAttachmentController)
 // List 列表
 func (c *sysAttachmentController) List(ctx context.Context, req *system.SysAttachmentSearchReq) (res *system.SysAttachmentSearchRes, err error) {
 	res = new(system.SysAttachmentSearchRes)
-	println("==================list：", req)
 	res.SysAttachmentSearchRes, err = commonService.SysAttachment().List(ctx, &req.SysAttachmentSearchReq)
 	return
 }
@@ -42,7 +41,6 @@ func (c *sysAttachmentController) Get(ctx context.Context, req *system.SysAttach
 // Add 添加附件管理
 func (c *sysAttachmentController) Add(ctx context.Context, req *system.SysAttachmentAddReq) (res *system.SysAttachmentAddRes, err error) {
 	req.CreatedBy = service.Context().GetUserId(ctx)
-	println("==================add：", req.Description)
 	err = commonService.SysAttachment().Add(ctx, req.SysAttachmentAddReq)
 	return
 }
