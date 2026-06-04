@@ -51,8 +51,8 @@ func (c *SysDictTypeController) Delete(ctx context.Context, req *system.DictType
 }
 
 // OptionSelect 获取字典选择框列表
-func (c *SysDictTypeController) OptionSelect(ctx context.Context, req *system.DictTypeAllReq) (res *system.DictTYpeAllRes, err error) {
-	res = new(system.DictTYpeAllRes)
+func (c *SysDictTypeController) OptionSelect(ctx context.Context, req *system.DictTypeAllReq) (res *system.DictTypeAllRes, err error) {
+	res = new(system.DictTypeAllRes)
 	res.DictType, err = commonService.SysDictType().GetAllDictType(ctx, req.All)
 	return
 }

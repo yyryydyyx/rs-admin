@@ -21,9 +21,9 @@ type menuController struct {
 	BaseController
 }
 
-func (c *menuController) List(ctx context.Context, req *system.RuleSearchReq) (res *system.RuleListRes, err error) {
+func (c *menuController) List(ctx context.Context, req *system.RuleSearchReq) (res *system.RuleSearchRes, err error) {
 	var list []*model.SysAuthRuleInfoRes
-	res = &system.RuleListRes{
+	res = &system.RuleSearchRes{
 		Rules: make([]*model.SysAuthRuleTreeRes, 0),
 	}
 	list, err = service.SysAuthRule().GetMenuListSearch(ctx, req)

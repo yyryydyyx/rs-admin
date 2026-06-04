@@ -51,6 +51,12 @@ type ToolsGenTableImportSearchReq struct {
 	commonApi.Author
 }
 
+type ToolsGenTableImportSearchRes struct {
+	g.Meta `mime:"application/json"`
+	commonApi.ListRes
+	List []*entity.ToolsGenTable `json:"list"`
+}
+
 // ToolsGenTableImportTableReq 导入表数据操作
 type ToolsGenTableImportTableReq struct {
 	g.Meta `path:"/tools/gen/importTableSave" tags:"系统后台/代码生成" method:"post" summary:"导入表结构操作"`
@@ -59,10 +65,22 @@ type ToolsGenTableImportTableReq struct {
 	Tables []string `p:"tables" v:"required#表名必须指定"`
 }
 
+type ToolsGenTableImportTableRes struct {
+	g.Meta `mime:"application/json"`
+	commonApi.ListRes
+	List []*entity.ToolsGenTable `json:"list"`
+}
+
 type ToolsGenTableDeleteReq struct {
 	g.Meta `path:"/tools/gen/tableDelete" tags:"系统后台/代码生成" method:"delete" summary:"删除已导入的表"`
 	commonApi.Author
 	Ids []int `p:"ids" v:"required#删除的id必须"`
+}
+
+type ToolsGenTableDeleteRes struct {
+	g.Meta `mime:"application/json"`
+	commonApi.ListRes
+	List []*entity.ToolsGenTable `json:"list"`
 }
 
 type ToolsGenTableEditReq struct {

@@ -21,10 +21,15 @@ type RuleSearchReq struct {
 	Component string `p:"component"`
 }
 
-type RuleListRes struct {
+type RuleSearchRes struct {
 	g.Meta `mime:"application/json"`
 	Rules  []*model.SysAuthRuleTreeRes `json:"rules"`
 }
+
+// type RuleListRes struct {
+// 	g.Meta `mime:"application/json"`
+// 	Rules  []*model.SysAuthRuleTreeRes `json:"rules"`
+// }
 
 type RuleAddReq struct {
 	g.Meta `path:"/menu/add" tags:"系统后台/菜单管理" method:"post" summary:"添加菜单"`

@@ -91,10 +91,11 @@ type SysAttachmentAddReq struct {
 }
 
 type SysAttachmentAddAttribute struct {
-	Md5    string
-	Driver uint
-	UserId uint64
-	AppId  string
+	Md5         string
+	Driver      uint
+	UserId      uint64
+	AppId       string
+	Description string
 }
 
 // SysAttachmentEditReq 修改操作请求参数
